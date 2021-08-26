@@ -1,0 +1,30 @@
+/*Organização redes sociais*/
+ul.social-network{
+    list-style: none;
+    padding: o;
+}
+/*Organização redes sociais uma do lado da outra e mesmo tamanho*/
+ul.social-network li{
+    display: inline;
+    margin: 0;
+    padding: 5px;
+}
+/*Organização dentro da classe redes sociais tamanho e cor*/
+.fa{
+    font-size:35pt;
+    color: white;
+    padding: 10px;
+}
+/*Mudar a cor ao clicar no icone (não esquecer do houver) */
+/*Organização redes sociais face classe fa da cor  */
+.fa-facebook-square:hover {
+    color: #3b5998;
+}
+/*Organização redes sociais insta classe fa da cor */
+.fa-instagram:hover{
+    color: #c13584;
+}
+/*Organização redes sociais linkedin classe fa da cor  */
+.fa-linkedin-square:hover{
+    color: #0072b1;
+}

@@ -1,12 +1,9 @@
 /*Organização redes sociais*/
 
 footer{
-
     background-color: rgb(010, 182, 218);
-
 }
 h4{
- 
 color: rgb(255, 255, 255);
 }
 
@@ -48,17 +45,15 @@ ul.social-network li{
 }
 
 .linkGen{
-
     text-decoration: none;
     color:rgb(255, 255, 255);
 }
 
 .linkGen:hover{
-
-color:yellow;
+    color:yellow;
 }
 
 hr{
     border-color: yellow; 
-    }
+}
 

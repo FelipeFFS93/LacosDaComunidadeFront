@@ -5,10 +5,11 @@
 */
 nav{
     background-color: rgb(010, 182, 218);
+    height: 70px;
 }
 .fs-16{
-    font-size: 16pt;
-    padding: 25px;
+    font-size: 15pt;
+    padding: 20px;
 }
 
 a{

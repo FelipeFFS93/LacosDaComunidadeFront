@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -8,6 +9,9 @@ import { RodapeComponent } from './rodape/rodape.component';
 import { EntrarComponent } from './entrar/entrar.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { CadastrarEventoComponent } from './cadastrar-evento/cadastrar-evento.component';
+import { InicioComponent } from './inicio/inicio.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -16,11 +20,14 @@ import { CadastrarEventoComponent } from './cadastrar-evento/cadastrar-evento.co
     RodapeComponent,
     EntrarComponent,
     CadastrarComponent,
-    CadastrarEventoComponent
+    CadastrarEventoComponent,
+    InicioComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

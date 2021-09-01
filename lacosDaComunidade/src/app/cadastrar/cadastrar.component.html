@@ -13,33 +13,53 @@
 
                     <div class="form-group">
                         <label for="nome">Nome</label>
-                        <input class="form-control" type="text" name="nome" id="nome" placeholder="Seu nome">
+                        <input [(ngModel)]= 'usuario.nome' class="form-control" type="text" name="nome" id="nome" placeholder="Seu nome">
                     </div>
 
                     <div class="form-group">
                         <label for="usuario">Usuário</label>
-                        <input class="form-control" type="text" name="usuario" id="usuario" placeholder="Seu usuário">
+                        <input [(ngModel)]= 'usuario.usuario' class="form-control" type="text" name="usuario" id="usuario" placeholder="Seu usuário">
                     </div>
 
                     <div class="form-group">
                         <label for="foto">Link da Foto</label>
-                        <input class="form-control" type="text" name="foto" id="foto" placeholder="Link da sua foto">
+                        <input [(ngModel)]= 'usuario.foto' class="form-control" type="text" name="foto" id="foto" placeholder="Link da sua foto">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ongs">Ongs</label>
+                        <input [(ngModel)]= 'usuario.ongs' class="form-control" type="text" name="ongs" id="ongs" placeholder="Digite a que Ong você pertence">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="genero">Genero</label>
+                        <input [(ngModel)]= 'usuario.genero' class="form-control" type="text" name="genero" id="genero" placeholder="Digite seu genero">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cpf">CPF</label>
+                        <input [(ngModel)]= 'usuario.CPF' class="form-control" type="text" name="cpf" id="cpf" placeholder="Digite seu CPF">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="genero">CNPJ</label>
+                        <input [(ngModel)]= 'usuario.CNPJ' class="form-control" type="text" name="cnpj" id="cnpj" placeholder="Digite seu CNPJ">
                     </div>
 
                     <div class="form-group">
                         <label for="senha">Senha</label>
-                        <input class="form-control" type="password" name="senha" id="senha" placeholder="Sua senha">
+                        <input (input)='confirmSenha($event)' class="form-control" type="password" name="senha" id="senha" placeholder="Sua senha">
                     </div>
 
                     <div class="form-group">
                         <label for="confirmSenha">Confirmar Senha</label>
-                        <input class="form-control" type="password" name="confirmSenha" id="confirmSenha"
+                        <input [(ngModel)]= 'usuario.senha' class="form-control" type="password" name="confirmSenha" id="confirmSenha"
                             placeholder="Confirme sua senha">
                     </div>
 
                     <div class="form-group">
-                        <label for="tipo">Tipo de Usuário</label>
-                        <select class="form-control" name="tipo" id="tipo">
+                        <label for="tipoUsuario">Tipo de Usuário</label>
+                        <select (change)='tipoUser($event)' class="form-control" name="tipo" id="tipo">
                             <option>Selecione um tipo de usuário</option>
                             <option value="normal">Normal</option>
                             <option value="adm">Administrador</option>
@@ -48,7 +68,7 @@
 
                     <div class="d-flex justify-content-center">
                         <button type="submit" class="btn btn-danger mr-4" routerLink="/menu">Cancelar</button>
-                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+                        <button type="submit" class="btn btn-primary" (click)= 'cadastrar()'>Cadastrar</button>
                     </div>
 
                 </div>

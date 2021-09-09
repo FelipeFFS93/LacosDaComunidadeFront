@@ -102,7 +102,7 @@ button{
     border: none;
     border-radius: 11px;
     align-items: center;
-    background-color: #1ac26ec4;
+    background-color: #0dc1cec4;
     color: rgb(0, 0, 0); /*cor da palavra entrar*/
     box-shadow: 3px 2px 2px #1201ff9c, 3px 2px 2px #0143ff00;
 }
@@ -139,7 +139,7 @@ textarea{
 
 .btnCancel:hover{
     font-family: Arial, Helvetica, sans-serif;
-    box-shadow: 6px 5px 5px #0258f8e5, 5px 5px 5px #0143ff00;
+    box-shadow: 6px 5px 5px #f80202e5, 5px 5px 5px #0143ff00;
     background-color: #fc2600d8;
     transition: .55s;
 }
@@ -147,7 +147,7 @@ textarea{
 
 .btnSend:hover{
     font-family: Arial, Helvetica, sans-serif;
-    box-shadow: 6px 5px 5px #0258f8e5, 5px 5px 5px #0143ff00;
+    box-shadow: 6px 5px 5px #aef802e5, 5px 5px 5px #0143ff00;
     color: #000;
     background-color: #00fc1594;
     transition: .55s;

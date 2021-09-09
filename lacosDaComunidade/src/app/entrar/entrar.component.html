@@ -1,28 +1,30 @@
 <div class="container-fluid">
 
-    <div class="row d-flex align-items-center">
+    <div class="row d-flex align-items-center colorBG">
 
         <div class="col-md-6"> 
 
             <div class="row d-flex justify-content-center">
                 <div class="col-md-6">
 
-                    <h1 class="text-center mb-3">Entrar</h1>
+                    <h1 class="text-center mb-5">Entrar</h1>
                     
-                    <div class="form-group">
-                        <label for="usuario">Usuário</label>
-                        <input [(ngModel)]='usuarioLogin.usuario' class="form-control" type="text" name="usuario" id="usuario"
+                    <div class="form-group btnLogin">
+                        <input [(ngModel)]='usuarioLogin.usuario' class="form-control slct" type="text" name="usuario" id="usuario"
                         placeholder="Seu usuário">
+                        <label for="usuario">Email <i class="fa fa-user" aria-hidden="true"></i></label>
                     </div> 
-                    
-                    <div class="form-group">
-                        <label for="senha">Senha</label>
-                        <input [(ngModel)]='usuarioLogin.senha' class="form-control" type="password" name="senha" id="senha"
+
+                    <div class="form-group btnLogin">
+                        <input [(ngModel)]='usuarioLogin.senha' class="form-control slct" type="password" name="senha" id="senha"
                         placeholder="Sua senha">
+                        <label for="senha">Senha <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                        </label>
+                        
                     </div>
 
                     <div class="d-flex justify-content-center">
-                        <button type="submit" class="btn btn-primary" (click)='entrar()'>Entrar</button>
+                        <button type="submit" class="btn " (click)='entrar()'>Entrar</button>
                     </div>
 
                     <hr class="mt-5 mb-5">

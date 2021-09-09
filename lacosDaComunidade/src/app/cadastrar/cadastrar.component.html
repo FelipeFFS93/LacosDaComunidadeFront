@@ -1,6 +1,6 @@
 <div class="container-fluid">
 
-    <div class="row">
+    <div class="row colorBG">
 
         <div class="col-md-6" id="img-bg"></div>
 
@@ -11,64 +11,65 @@
 
                     <h1 class="text-center">Cadastro</h1>
 
-                    <div class="form-group">
-                        <label for="nome">Nome</label>
-                        <input [(ngModel)]= 'usuario.nome' class="form-control" type="text" name="nome" id="nome" placeholder="Seu nome">
+                    <div class="form-group btnLogin">
+                        <input [(ngModel)]= 'usuario.nome' class="form-control slct" type="text" name="nome" id="nome" placeholder="Seu nome">
+                        <label for="nome">Nome <i class="fa fa-user slct" aria-hidden="true"></i></label>
                     </div>
 
-                    <div class="form-group">
-                        <label for="usuario">Usuário</label>
-                        <input [(ngModel)]= 'usuario.usuario' class="form-control" type="text" name="usuario" id="usuario" placeholder="Seu usuário">
+                    <div class="form-group btnLogin">
+                        <input [(ngModel)]= 'usuario.usuario' class="form-control slct" type="text" name="usuario" id="usuario" placeholder="Seu usuário">
+                        <label for="usuario">Email <i class="fa fa-user-o" aria-hidden="true"></i></label>
                     </div>
 
-                    <div class="form-group">
-                        <label for="foto">Link da Foto</label>
-                        <input [(ngModel)]= 'usuario.foto' class="form-control" type="text" name="foto" id="foto" placeholder="Link da sua foto">
+                    <div class="form-group btnLogin">
+                        <input [(ngModel)]= 'usuario.foto' class="form-control slct" type="text" name="foto" id="foto" placeholder="Link da sua foto">
+                        <label for="foto">Link da Foto <i class="fa fa-picture-o" aria-hidden="true"></i></label>
                     </div>
 
-                    <div class="form-group">
-                        <label for="ongs">Ongs</label>
-                        <input [(ngModel)]= 'usuario.ongs' class="form-control" type="text" name="ongs" id="ongs" placeholder="Digite a que Ong você pertence">
+                    <div class="form-group btnLogin">
+                        <input [(ngModel)]= 'usuario.ongs' class="form-control slct" type="text" name="ongs" id="ongs" placeholder="Digite a que Ong você pertence">
+                        <label for="ongs">Ongs <i class="fa fa-users" aria-hidden="true"></i></label>
                     </div>
 
-                    <div class="form-group">
-                        <label for="genero">Genero</label>
-                        <input [(ngModel)]= 'usuario.genero' class="form-control" type="text" name="genero" id="genero" placeholder="Digite seu genero">
+                    <div class="form-group btnLogin">
+                        <input [(ngModel)]= 'usuario.genero' class="form-control slct" type="text" name="genero" id="genero" placeholder="Digite seu genero">
+                        <label for="genero">Genero <i class="fa fa-male" aria-hidden="true"></i> <i class="fa fa-female" aria-hidden="true"></i></label>
                     </div>
 
-                    <div class="form-group">
-                        <label for="cpf">CPF</label>
-                        <input [(ngModel)]= 'usuario.CPF' class="form-control" type="text" name="cpf" id="cpf" placeholder="Digite seu CPF">
+                    <div class="form-group btnLogin">
+                        <input [(ngModel)]= 'usuario.CPF' class="form-controlb slct" type="text" name="cpf" id="cpf" placeholder="Digite seu CPF">
+                        <label for="cpf">CPF <i class="fa fa-id-card-o" aria-hidden="true"></i></label>
                     </div>
 
-                    <div class="form-group">
-                        <label for="genero">CNPJ</label>
-                        <input [(ngModel)]= 'usuario.CNPJ' class="form-control" type="text" name="cnpj" id="cnpj" placeholder="Digite seu CNPJ">
+                    <div class="form-group btnLogin">
+                        <input [(ngModel)]= 'usuario.CNPJ' class="form-control slct" type="text" name="cnpj" id="cnpj" placeholder="Digite seu CNPJ">
+                        <label for="genero">CNPJ <i class="fa fa-address-card-o" aria-hidden="true"></i></label>
                     </div>
 
-                    <div class="form-group">
-                        <label for="senha">Senha</label>
-                        <input (input)='confirmSenha($event)' class="form-control" type="password" name="senha" id="senha" placeholder="Sua senha">
+                    <div class="form-group btnLogin">
+                        <input (input)='confirmSenha($event)' class="form-control slct" type="password" name="senha" id="senha" placeholder="Sua senha">
+                        <label for="senha">Senha <i class="fa fa-lock" aria-hidden="true"></i>
+                        </label>
                     </div>
 
-                    <div class="form-group">
-                        <label for="confirmSenha">Confirmar Senha</label>
-                        <input [(ngModel)]= 'usuario.senha' class="form-control" type="password" name="confirmSenha" id="confirmSenha"
+                    <div class="form-group btnLogin">
+                        <input [(ngModel)]= 'usuario.senha' class="form-control slct" type="password" name="confirmSenha" id="confirmSenha"
                             placeholder="Confirme sua senha">
+                        <label for="confirmSenha">Confirmar Senha <i class="fa fa-lock" aria-hidden="true"></i></label>
                     </div>
 
-                    <div class="form-group">
-                        <label for="tipoUsuario">Tipo de Usuário</label>
-                        <select (change)='tipoUser($event)' class="form-control" name="tipo" id="tipo">
-                            <option>Selecione um tipo de usuário</option>
-                            <option value="normal">Normal</option>
-                            <option value="adm">Administrador</option>
+                    <div class="form-group btnLogin">
+                        <label class="userType" for="tipoUsuario">Tipo de Usuário <i class="fa fa-user-plus" aria-hidden="true"></i></label>
+                        <select (change)='tipoUser($event)' class="form-control tUser" name="tipo" id="tipo">
+                            <option selected disabled value="">Selecione um tipo de usuário</option>
+                            <option class="opt" value="normal">Normal</option>
+                            <option class="opt" value="adm">Administrador</option>
                         </select>
                     </div>
 
-                    <div class="d-flex justify-content-center">
-                        <button type="submit" class="btn btn-danger mr-4" routerLink="/menu">Cancelar</button>
-                        <button type="submit" class="btn btn-primary" (click)= 'cadastrar()'>Cadastrar</button>
+                    <div class="d-flex justify-content-center btnLogin">
+                        <button type="submit" class="btnCancel mr-4" routerLink="/menu">Cancelar</button>
+                        <button type="submit" class="btnCad" (click)= 'cadastrar()'>Cadastrar</button>
                     </div>
 
                 </div>

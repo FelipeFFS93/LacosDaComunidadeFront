@@ -9,3 +9,93 @@
     background-size: cover;
     
 }
+.colorBG{
+    background-image: linear-gradient(#fff, rgb(224, 220, 165));
+}
+
+input{
+    width: 100%;
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(010, 182, 218);
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif; /*sempre por mais de uma*/
+    font-size: 20px;
+    transition: .20s ease-in-out;
+}
+
+.btnLogin{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+label{
+    position: absolute;
+    top : -15%; 
+    left: 2%;
+    font-family : Arial , Helvetica , sans-serif; 
+    color: #000;
+    transform: translateY(10px);
+    transition: .20s ease-in-out; 
+    margin-top: -5px; /*Lembrar de espaçar na validação*/
+}
+
+input:focus + label{
+    color: transparent;
+    background-color: transparent;
+}
+
+.slct{
+    color:rgb(0, 0, 0);
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(010, 182, 218);
+}
+
+input:focus{
+    border-bottom: 2px solid rgb(010, 182, 218);
+    box-shadow: 0 2px 0 0 rgb(010, 182, 218);
+}
+
+input:focus + label{
+    transform: translateY(-11px) scale(.9);
+    color: rgb(0, 0, 0);
+}
+
+input:not(:placeholder-shown) + label{
+    transform: translateY(-11px) scale(.9);
+    color: rgb(0, 0, 0);
+}
+
+input:not(:placeholder-shown){
+    border-bottom: 2px solid #17b617;
+    box-shadow: 0 2px 0 0 #17b617;
+}
+
+input::placeholder{
+    color: transparent;
+}
+button{
+padding: 12px 18px;
+width: 120px;
+margin-top: 55px; 
+margin-right: 25px;
+font-family: Arial, Helvetica, sans-serif; /*sempre por mais de uma*/
+border: none;
+border-radius: 11px;
+align-items: center;
+background-color: #01afff7c;
+color: rgb(0, 0, 0); /*cor da palavra entrar*/
+box-shadow: 3px 2px 2px #5b98a39c, 3px 2px 2px #01afff98;
+}
+
+button:hover{
+background-color: #00bb10be;
+box-shadow: 5px 4px 2px #61a35b9c, 5px 4px 2px #01ff624b;
+transition: .35s;
+border: none;
+outline: none;
+}

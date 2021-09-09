@@ -12,6 +12,8 @@ import { CadastrarEventoComponent } from './cadastrar-evento/cadastrar-evento.co
 import { InicioComponent } from './inicio/inicio.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
+import { EditTemaComponent } from './tema/edit-tema/edit-tema.component';
+import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component';
 
 
 @NgModule({
@@ -24,6 +26,8 @@ import { HomeComponent } from './home/home.component';
     CadastrarEventoComponent,
     InicioComponent,
     HomeComponent,
+    EditTemaComponent,
+    TemaDeleteComponent,
   ],
   imports: [
     BrowserModule,

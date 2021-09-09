@@ -11,6 +11,7 @@ import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { CadastrarEventoComponent } from './cadastrar-evento/cadastrar-evento.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { FormsModule } from '@angular/forms';
     CadastrarComponent,
     CadastrarEventoComponent,
     InicioComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

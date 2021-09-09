@@ -8,7 +8,7 @@ import { MenuComponent } from './menu/menu.component';
 
 const routes: Routes = [
 
-  {path:"", redirectTo: "home", pathMatch: "full"},
+  {path:"", redirectTo: "entrar", pathMatch: "full"},
 
   {path:"entrar", component:EntrarComponent},
 

@@ -69,7 +69,7 @@
 
 
 
-<!-- Modal -->
+<!-- Modal-->
 <div class="modal fade" id="novaPostagem" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -102,7 +102,7 @@
 
                 <div class="form-group">
                     <label for="texto">Descrição do Evento</label>
-                    <textarea [(ngModel)]="postagem.descricaoPessoas" name="texto" class="form-control" id="texto"
+                    <textarea name="texto" class="form-control" id="texto"
                         placeholder="Digite a descrição do evento" rows="3"></textarea>
                 </div>
                 
@@ -110,9 +110,9 @@
                 <div class="form-group">
                     <label for="texto">Escolha um tema ou <a data-dismiss="modal" routerLink="/tema">cadastre um
                             novo</a>: </label>
-                    <select class="form-control" name="tema" id="tema" [(ngModel)]="idTema" (change)="findByIdTema()">
-                        <option *ngFor="let item of listaTemas" value="{{item.id}}">
-                            <!--{{item.descricaoPessoas}}-->
+                    <select class="form-control" name="tema" id="tema">
+                        <option>
+                            
                         </option>
                     </select>
                 </div>

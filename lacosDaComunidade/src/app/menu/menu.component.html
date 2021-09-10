@@ -1,47 +1,32 @@
-<!--nav bar na cor cinza-->
-<nav class="navbar fixed-top navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
         aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
         <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-        <ul class="navbar-nav mr-auto d-flex align-items-center">
-            <li class="nav-item active mr-5">
-                <!--foto da imagem com tamanho e classe reponsiva a qualquer tela e foto em formato de ciruclo-->
-                <img src="../../assets/img/logo.png" alt="Imagem do user" width="100px" height="105px"
-                    class="img-fluid rounded-circle mt-5">
-            </li>  
+        <ul class="navbar-nav mr-auto d-flex align-items-center"> <!--mr alinha do lado direito-->
+            <li class="nav-item active">
+                <img src="{{foto}}" alt="Imagem da(o) usuaria(o)"
+                    width="50px" height="50px" class="img-fluid rounded-circle">
+                <!--deixa as imagens responsivas a todos tipos de tela-->
+            </li>
+            <li class="nav-item pl-2 fs-16">
+                <p class="m-0 font-weight-bold text-white">{{nome}}</p>
+            </li>
+
+            <li class="nav-item pl-2">
+                <a href="">
+                    <p class=" text-white fs-16 m-0"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></p>
+                </a>
+            </li>
         </ul>
 
-        <ul class="navbar-nav m-auto d-flex align-items-center pquem" >
-            <li class="nav-item pl-3">
-                <!--nome em negrito-->
-                <p class="m-0 font-weight-bold text-white fs-16"> Quem somos? </p>
-            </li>
-            <li class="nav-item pl-3">
-                <!--nome em negrito-->
-                <p class="m-0 font-weight-bold text-white fs-16"> O que fazemos? </p>
-            </li>
-            <li class="nav-item pl-3">
-                <!--nome em negrito-->
-                <p class="m-0 font-weight-bold text-white fs-16"> Time </p>
-            </li>
-            <li class="nav-item pl-3">
-                <!--nome em negrito-->
-                <p class="m-0 font-weight-bold text-white fs-16 mr-5"> Contato </p>
+
+        <ul class="navbar-nav ml-auto d-flex align-items-center">
+            <li class="nav-item pl-2 fs-16">
+                <a (click)='sair()' class="m-0 font-weight-bold text-white">Sair <i class="fa fa-sign-out" aria-hidden="true"></i></a>
             </li>
         </ul>
-        <!--login e entrar-->
-        <ul class="navbar-nav mr-auto d-flex align-items-end ml-5">
-            <div class="d-flex justify-content-center ml-5 mr-3">
-                <button type="submit" class="btn" routerLink="/entrar">Login</button>
-            </div>
-            <div class="d-flex justify-content-center">
-                <button type="submit" class="btn" routerLink="/cadastrar">Cadastrar</button>
-            </div>
-
-        </ul>
-
     </div>
 </nav>

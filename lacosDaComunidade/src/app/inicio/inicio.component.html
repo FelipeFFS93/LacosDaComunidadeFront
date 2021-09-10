@@ -1,27 +1,27 @@
 <div class="container-fluid">
 
-    <div class="row bg-secondary d-flex align-items-center">
-        <div class="col-md-6">
+    <div class="row bg-img d-flex justify-content-center align-items-center">
+        <div class="col-md-12">
 
             <div class="row d-flex justify-content-center">
                 <div class="col-md-6 text-white">
-                    <h1 class="fs-54">Seja bem vides!</h1>
-                    <h5 class="fs-18">Expresse aqui os seus pensamentos e opiniões!</h5>
+                    <h1 class="fs-50">Seja bem vinde ao <br> Laços da Comunidade!</h1>
+                    <h5 class="fs-20">Cadastre seu evento de para mudar a sociedade!!</h5>
                 </div>
             </div>
             <div class="row d-flex justify-content-center mt-3 mb-5">
                 <div class="col-md-6">
-                    <button class="btn btn-light mr-2" data-toggle="modal" data-target="#novaPostagem">Nova
-                        Postagem</button>
-                    <a class="btn btn-outline-light" href="#postagens">Ver Postagens</a>
+                    <button class="btn btn-light mr-2" data-toggle="modal" data-target="#novaPostagem">Novo
+                        Evento</button>
+                    <a class="btn btn-outline-light" href="#postagens">Ver Eventos</a>
                 </div>
             </div>
 
         </div>
 
-        <div class="col-md-6 d-flex justify-content-center">
+        <!-- <div class="col-md-6 d-flex justify-content-center">
             <img src="../../assets/img/Group therapy-rafiki.png" alt="Imagem inicial" width="500px" height="500px">
-        </div>
+        </div> -->
     </div>
 
 </div>
@@ -33,41 +33,38 @@
 
             <a class="nav-item nav-link active text-secondary font-weight-bold" id="nav-todasPostagens-tab"
                 data-toggle="tab" href="#todasPostagens" role="tab" aria-controls="nav-todasPostagens"
-                aria-selected="true">Todas as Postagens</a>
+                aria-selected="true">Todos Eventos</a>
 
             <a class="nav-item nav-link text-secondary font-weight-bold" id="nav-minhasPostagens-tab" data-toggle="tab"
-                href="#minhasPostagens" role="tab" aria-controls="nav-minhasPostagens" aria-selected="false">Minhas
-                Postagens</a>
+                href="#minhasPostagens" role="tab" aria-controls="nav-minhasPostagens" aria-selected="false">Seus
+                Eventos</a>
 
             <a class="nav-item nav-link text-secondary font-weight-bold" id="nav-postagemTema-tab" data-toggle="tab"
-                href="#postagemTema" role="tab" aria-controls="nav-postagemTema" aria-selected="false">Postagens por
+                href="#postagemTema" role="tab" aria-controls="nav-postagemTema" aria-selected="false">Eventos por
                 Tema</a>
         </div>
     </nav>
+
+
+
 
     <div class="tab-content" id="nav-tabContent">
 
         <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel"
             aria-labelledby="nav-todasPostagens-tab">
-            Todas as Postagens
+            Todos Eventos
         </div>
 
         <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="nav-minhasPostagens-tab">
-            Minhas Postagens
+            Seus Eventos
         </div>
 
         <div class="tab-pane fade" id="postagemTema" role="tabpanel" aria-labelledby="nav-postagemTema-tab">
-            Postagens por Tema
+            Eventos por Tema
         </div>
     </div>
 
 </div>
-
-
-
-
-
-
 
 <!-- Modal-->
 <div class="modal fade" id="novaPostagem" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
@@ -102,17 +99,17 @@
 
                 <div class="form-group">
                     <label for="texto">Descrição do Evento</label>
-                    <textarea name="texto" class="form-control" id="texto"
-                        placeholder="Digite a descrição do evento" rows="3"></textarea>
+                    <textarea name="texto" class="form-control" id="texto" placeholder="Digite a descrição do evento"
+                        rows="3"></textarea>
                 </div>
-                
+
 
                 <div class="form-group">
                     <label for="texto">Escolha um tema ou <a data-dismiss="modal" routerLink="/tema">cadastre um
                             novo</a>: </label>
                     <select class="form-control" name="tema" id="tema">
                         <option>
-                            
+
                         </option>
                     </select>
                 </div>

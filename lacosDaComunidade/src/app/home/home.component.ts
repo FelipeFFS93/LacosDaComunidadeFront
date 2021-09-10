@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { environment } from 'src/environments/environment.prod';
+
 
 @Component({
   selector: 'app-home',
@@ -6,10 +9,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  constructor(  
+    private router:Router
+  ) { }
 
-  constructor() { }
+  ngOnInit(){
+    if(environment.token == ''){
+      this.router.navigate(['/home'])
+    }
 
-  ngOnInit(): void {
   }
 
 }

@@ -115,11 +115,7 @@ font-family:Sans Serif;
 font-size: 35px;
 
 }
-.fonte2{
 
-    font-family:Sans Serif;
-    font-size: 35px;
-}
 .main {
     padding: 2rem 0;
 }
@@ -268,11 +264,9 @@ article:nth-child(7) {
 /* FOOTER */
 
 footer{
-    background-color: rgb(010, 182, 218);
+    background-image: linear-gradient(#fff, rgb(0, 47, 255));
 }
-h4{
-color: rgb(255, 255, 255);
-}
+
 
 
 ul.social-network{

@@ -1,4 +1,4 @@
-<nav class="navbar fixed-top navbar-expand-lg navbar-light ">
+<nav id="nvShadow" class="navbar fixed-top navbar-expand-lg navbar-light">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
         aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
         <span class="navbar-toggler-icon"></span>
@@ -9,31 +9,32 @@
             <li class="nav-item active mr-5">
                 <!--foto da imagem com tamanho e classe reponsiva a qualquer tela e foto em formato de ciruclo-->
                 <img src="../../assets/img/logo.png" alt="Imagem do user" width="100px" height="105px"
-                    class="img-fluid rounded-circle mt-5">
+                    class="img-fluid rounded-circle mt-5 ml-2">
             </li>
+            <p class="mt-3 text-white fs-16 font-weight-bold logoNome">Laços Da Comunidade</p>
         </ul>
 
-        <ul class="navbar-nav m-auto d-flex align-items-center pquem">
-            <li class="nav-item pl-3">
+        <!-- <ul class="navbar-nav m-auto d-flex align-items-center">
+            <li class="nav-item pl-3"> -->
                 <!--nome em negrito-->
-                <a href="#quemSomos">
+                <!-- <a href="#quemSomos">
                     <p class="m-0 font-weight-bold text-white fs-16"> Quem somos </p>
                 </a>
             </li>
-            <li class="nav-item pl-3">
+            <li class="nav-item pl-3"> -->
                 <!--nome em negrito-->
-                <a href="#time">
+                <!-- <a href="#time">
                     <p class="m-0 font-weight-bold text-white fs-16"> Time </p>
                 </a>
                 
             </li>
-            <li class="nav-item pl-3 mr-5">
+            <li class="nav-item pl-3 mr-5"> -->
                 <!--nome em negrito-->
-                <a href="#ctt">Quem somos</a>
+                <!-- <a href="#ctt">Quem somos</a>
             </li>
-        </ul>
+        </ul> -->
         <!--login e entrar-->
-        <ul class="navbar-nav mr-auto d-flex justify-content-end ml-5">
+        <ul class="navbar-nav d-flex justify-content-end ml-5 alBotao">
             <div class="d-flex justify-content-center ml-5 mr-3">
                 <button type="submit" class="btn" routerLink="/entrar">Login</button>
             </div>
@@ -47,14 +48,14 @@
 </nav>
 
 <div>
-    <img src="../../assets/img/laços home.jpg" alt="">
+    <img src="../../assets/img/lacos_home_4.jpg" class="imgHome" alt="">
 </div>
 
 
-
-<div class="container"><br><br>
-    <h1 class="fonte2" id="quemSomos"> <b>Quem Somos</b> </h1>
-    <p class="fonte1"> Uma empresa que realiza o desejo de juntar o maior número projetos a pessoas,
+<div class="jumbotron jumbotron-fluid jumboColor space ">
+    <div class="container">
+      <h1 class="display-5">Quem Somos</h1>
+      <p class="lead">Uma empresa que realiza o desejo de juntar o maior número projetos a pessoas,
         buscando informar e compartilhar eventos.
         O nosso público alvo é comunidades carentes para que os moradores e ONGs possam
         compartilhar seus eventos permitindo o acesso para:
@@ -63,11 +64,13 @@
         ✔ Atividades culturais <br>
         ✔ Cursos <br>
         ✔ Palestras <br>
-        Fortalecendo a rede de apoio.</p>
-</div>
+        ✔ Fortalecendo a rede de apoio.</p>
+    </div>
+  </div>
+
 
 <!--CARDS-->
-<h1 class="fonte2" id="time">Time</h1>
+<h1 class="fonte2 d-flex" id="time">Time</h1>
 <div class="main bd-grid mt-5">
 
     <!--Card1-->

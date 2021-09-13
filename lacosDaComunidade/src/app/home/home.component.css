@@ -83,6 +83,24 @@ a {
 }
 
 /*-- LAYAOUT --*/
+
+
+
+hr{
+    border-color: yellow; 
+}
+
+.fonte1{
+
+font-family:Sans Serif;
+font-size: 35px;
+
+}
+.fonte2{
+
+    font-family:Sans Serif;
+    font-size: 35px;
+}
 .main {
     padding: 2rem 0;
 }
@@ -216,3 +234,62 @@ article:nth-child(7) {
         margin-right: auto;
     }
 }
+
+
+
+/* FOOTER */
+
+footer{
+    background-color: rgb(010, 182, 218);
+}
+h4{
+color: rgb(255, 255, 255);
+}
+
+
+ul.social-network{
+    list-style: none;
+    padding: o;
+}
+/*Organização redes sociais uma do lado da outra e mesmo tamanho*/
+ul.social-network li{
+    display: inline;
+    margin: 0;
+    padding: 5px;
+}
+/*Organização dentro da classe redes sociais tamanho e cor*/
+.fa:hover{
+    font-size: 35pt;
+    color: white;
+    padding: 10px;
+}
+/*Mudar a cor ao clicar no icone (não esquecer do houver) */
+/*Organização redes sociais face classe fa da cor  */
+.fa-facebook-square {
+    font-size: 35pt;
+    padding: 10px;
+    color: rgb(0, 30, 128);
+}
+/*Organização redes sociais insta classe fa da cor */
+.fa-instagram{
+    font-size: 35pt;
+    padding: 10px;
+    color: #c13584;
+}
+/*Organização redes sociais linkedin classe fa da cor  */
+.LKD{
+    font-size: 35pt;
+    padding: 10px;
+    color: #0170ac;
+} 
+
+.linkGen{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+
+.linkGen:hover{
+    color:yellow;
+}
+
+

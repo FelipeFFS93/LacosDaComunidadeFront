@@ -19,6 +19,14 @@ export class PostagemService {
     return this.http.get<Postagem[]>("https://lacosdacomunidade.herokuapp.com/postagem", this.token)
   }
 
+  getByIdTema(id: number): Observable<Postagem>{
+    return this.http.get<Postagem>(`https://lacosdacomunidade.herokuapp.com/postagem/${id}`, this.token)
+  }
+
+  getByLocalEvento(nomeEvento: string): Observable<Postagem>{
+    return this.http.get<Postagem>(`https://lacosdacomunidade.herokuapp.com/tema/nomeEvento/${nomeEvento}`, this.token)
+  }
+
   postPostagem(postagem: Postagem): Observable<Postagem>{
     return this.http.post<Postagem>("https://lacosdacomunidade.herokuapp.com/postagem", postagem, this.token)
   }

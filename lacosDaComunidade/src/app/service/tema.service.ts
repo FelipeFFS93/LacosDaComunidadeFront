@@ -22,6 +22,10 @@ export class TemaService {
   getByIdTema(id: number): Observable<Tema>{
     return this.http.get<Tema>(`https://lacosdacomunidade.herokuapp.com/tema/${id}`, this.token)
   }
+  
+  getByLocalEvento(localEvento: string): Observable<Tema>{
+    return this.http.get<Tema>(`https://lacosdacomunidade.herokuapp.com/tema/local_evento/${localEvento}`, this.token)
+  }
 
   postTema(tema: Tema): Observable<Tema>{
     return this.http.post<Tema>("https://lacosdacomunidade.herokuapp.com/tema",tema,this.token)

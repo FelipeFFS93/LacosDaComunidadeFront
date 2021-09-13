@@ -16,23 +16,24 @@
         <ul class="navbar-nav m-auto d-flex align-items-center pquem">
             <li class="nav-item pl-3">
                 <!--nome em negrito-->
-                <p class="m-0 font-weight-bold text-white fs-16"> Quem somos? </p>
+                <a href="#quemSomos">
+                    <p class="m-0 font-weight-bold text-white fs-16"> Quem somos </p>
+                </a>
             </li>
             <li class="nav-item pl-3">
                 <!--nome em negrito-->
-                <p class="m-0 font-weight-bold text-white fs-16"> O que fazemos? </p>
+                <a href="#time">
+                    <p class="m-0 font-weight-bold text-white fs-16"> Time </p>
+                </a>
+                
             </li>
-            <li class="nav-item pl-3">
+            <li class="nav-item pl-3 mr-5">
                 <!--nome em negrito-->
-                <p class="m-0 font-weight-bold text-white fs-16"> Time </p>
-            </li>
-            <li class="nav-item pl-3">
-                <!--nome em negrito-->
-                <p class="m-0 font-weight-bold text-white fs-16 mr-5"> Contato </p>
+                <a href="#ctt">Quem somos</a>
             </li>
         </ul>
         <!--login e entrar-->
-        <ul class="navbar-nav mr-auto d-flex align-items-end ml-5">
+        <ul class="navbar-nav mr-auto d-flex justify-content-end ml-5">
             <div class="d-flex justify-content-center ml-5 mr-3">
                 <button type="submit" class="btn" routerLink="/entrar">Login</button>
             </div>
@@ -45,9 +46,28 @@
     </div>
 </nav>
 
+<div>
+    <img src="../../assets/img/laços home.jpg" alt="">
+</div>
+
+
+
+<div class="container"><br><br>
+    <h1 class="fonte2" id="quemSomos"> <b>Quem Somos</b> </h1>
+    <p class="fonte1"> Uma empresa que realiza o desejo de juntar o maior número projetos a pessoas,
+        buscando informar e compartilhar eventos.
+        O nosso público alvo é comunidades carentes para que os moradores e ONGs possam
+        compartilhar seus eventos permitindo o acesso para:
+        <br>
+        ✔ Doações <br>
+        ✔ Atividades culturais <br>
+        ✔ Cursos <br>
+        ✔ Palestras <br>
+        Fortalecendo a rede de apoio.</p>
+</div>
 
 <!--CARDS-->
-
+<h1 class="fonte2" id="time">Time</h1>
 <div class="main bd-grid mt-5">
 
     <!--Card1-->
@@ -320,10 +340,6 @@
     </article>
     <!--Card5-->
 
-
-
-
-
     <!--Card6-->
     <article class="card">
         <div class="card__img">
@@ -364,7 +380,6 @@
                     <i class="fa fa-github" aria-hidden="true"></i>
                 </a>
             </p>
-
             <div>
                 <span class="card__preci card__preci--now">Valmir Lima</span>
             </div>
@@ -380,3 +395,51 @@
 </div>
 <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 <!--/CARDS-->
+
+<!--rodape-->
+
+<footer class="page-footer-small  pt-4" id="ctt">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <h4>Acompanhem as redes sociais da Generation Brasil!<i aria-hidden="true"></i></h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <ul class="social-network">
+                    <!--Icone redes sociais-->
+                    <li>
+                        <a href="https://www.facebook.com/search/top?q=generation%20brasil" target="_blank"
+                            class="icoFacebook">
+                            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/generationbrasil/" target="_blank" class="icoInstagram">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.linkedin.com/school/generationbrasil/" target="_blank" class="icoLinkedin">
+                            <i class="fa fa-linkedin-square LKD" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="footer-copyright text-center py-3">
+        <span class="text-light"> ©️ 2021 Copyright: </span>
+        <!--Colocar o site próprio-->
+        <a class="linkGen" target="_blank" href="#">Laços da Comunidade</a>
+    </div>
+
+</footer>
+<!--rodape-->

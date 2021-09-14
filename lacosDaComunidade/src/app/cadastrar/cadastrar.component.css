@@ -71,7 +71,7 @@ input:not(:placeholder-shown) + label{
 
 input:not(:placeholder-shown){
     border-bottom: 2px solid rgb(010, 182, 218);
-    box-shadow: 0 2px 0 0 #17b617;
+    box-shadow: 0 2px 0 0 rgb(010, 182, 218);
 }
 
 input::placeholder{
@@ -131,8 +131,8 @@ outline: none;
 
 .btnCad:hover{
     font-family: Arial, Helvetica, sans-serif;
-    box-shadow: 3px 2px 2px #00fc1594, 5px 5px 5px #cdcfd498;
+    box-shadow: 3px 2px 2px rgb(010, 182, 218), 5px 5px 5px #cdcfd498;
     color: #000;
-    background-color: #00fc1594;
+    background-color: rgb(242, 005, 197);
     transition: .55s;
 }

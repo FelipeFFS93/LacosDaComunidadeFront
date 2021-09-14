@@ -3,7 +3,9 @@
     
 }
 */
-
+div{
+    font-family: sans-serif;
+}
 .logoNome{
     margin-left: -40px;
 }
@@ -115,6 +117,12 @@ font-family:Sans Serif;
 font-size: 35px;
 
 }
+.fonte2{
+
+font-family:Sans Serif;
+font-size: 25px;
+
+}
 
 .main {
     padding: 2rem 0;
@@ -175,22 +183,12 @@ article:nth-child(7) {
     transition: .5s;
 }
 
-.card__name {
-    position: absolute;
-    left: -25%;
-    top: 0%;
-    width: 3.5rem;
-    height: 100%;
-    text-align: center;
-    background-color: rgb(218, 210, 107);
-    font-weight: bold;
-    transition: .5s;
-}
 
 .card__icon {
     margin-top: 1.5rem;
     font-size: 1.5rem;
     color: #fff;
+    max-height: 15px;
 }
 
 .card__icon:hover {
@@ -217,22 +215,33 @@ article:nth-child(7) {
     font-weight: bold;
 }
 
-.card:hover {
+.card:hover{
+    background-image: linear-gradient(rgb(255, 1, 208),  rgb(32, 199, 233));
     box-shadow: 0 .5rem 1rem #1058cc;
+    transition: .45s ease-in-out;
+}
+
+/* .card:hover {
+    box-shadow: 0 .5rem 1rem #1058cc; 
 }
 
 .card:hover .card__name {
     left: 0;
 }
 
-.card:hover .card__img{
+.card__img:hover{
     margin-left: 3.5rem;
 }
 
 
-.card:hover .card__precis {
+.card:hover .card__precis { 
     margin-left: 3.5rem;
     padding: 0 2.5rem;
+} */
+
+.bcdColor{
+    background-image:linear-gradient( rgb(219, 210, 87), rgb(255, 255, 255));
+    margin-top: -25px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -253,19 +262,29 @@ article:nth-child(7) {
 /* JUMBOTROM */
 
 .jumboColor{
-    background-image:linear-gradient(rgb(126, 189, 240),  rgb(255, 255, 255));;
+    background-image:linear-gradient(rgb(255, 255, 255),  rgb(219, 210, 87));
 }
 
 .space{
     margin-top: -55px;
 }
 
+/* TEXTO COM VIDEO */
+.bcdTxt{
+    background-color: rgb(219, 210, 87);
+    margin-top: -35px
+}
+
 
 /* FOOTER */
 
 footer{
-    background-image: linear-gradient(#fff, rgb(0, 47, 255));
+    background-color: rgb(010, 182, 218);
 }
+h4{
+color: rgb(255, 255, 255);
+}
+
 
 
 

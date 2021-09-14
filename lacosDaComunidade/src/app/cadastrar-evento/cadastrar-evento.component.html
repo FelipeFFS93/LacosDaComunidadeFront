@@ -1,40 +1,45 @@
 
-<div class="container-fluid" >
+<div class="container-fluid">
 
-    <div class="col-md-6">
-        <p id="img-bg"></p>
-    </div>
+    <div class="row colorBG">
 
-    <div class="row d-flex justify-content-center" class="img-bg2">
-        <div class="col-md-6 box">
-            <h1 class="text-white mb-3 text-center">Cadastrar Tema</h1>
-            <div class="form-group btnLogin">
-                <input class= "form-control slct" type="text" name="nome" id="nome" placeholder="Digite seu Nome">
-                <label for="nome">Nome <i class="fa fa-user" aria-hidden="true"></i></label> 
-            </div>
+        <div class="col-md-6" id="img-bg"></div>
 
-            <div class="form-group btnLogin">
-                <input class= "form-control slct" type="text" name="local" id="local" placeholder="Digite sua localidade" required>
-                <label for="local">Local <i class="fa fa-map-marker" aria-hidden="true"></i></label>
-            </div>
-            <div class="form-group btnLogin">
-                <input class= "form-control slct" type="date" name="data" id="biografia" placeholder="Digite uma Data" required>   
-            </div>
+        <div class="col-md-6 mt-5 mb-5">
 
-            <div class="form-group btnLogin">
-                <input class= "form-control slct" type="text" name="qtdPessoas" id="qtdPessoas" placeholder="Digite a quantidade de pessoas" required>
-                <label for="qtdPessoas">Quantidade de Pessoas <i class="fa fa-map-marker" aria-hidden="true"></i></label>
-            </div>
+            <div class="row d-flex justify-content-center">
 
-            <div class="form-group btnLogin">
-                <input class= "form-control slct" type="text" name="temaEvento" id="temaEvento" placeholder="Digite o tema do seu evento" required>
-                <label for="temaEvento">Tema do Evento <i class="fa fa-map-marker" aria-hidden="true"></i></label>
+                    <div class="col-md-6 box">
+                        <h1 class="text-white mb-3 text-center">Cadastrar Tema</h1>
+                        <div class="form-group btnLogin">
+                            <input class= "form-control slct" type="text" name="nome" id="nome" placeholder="Digite seu Nome">
+                            <label for="nome">Nome <i class="fa fa-user" aria-hidden="true"></i></label> 
+                        </div>
+            
+                        <div class="form-group btnLogin">
+                            <input class= "form-control slct" type="text" name="local" id="local" placeholder="Digite sua localidade" required>
+                            <label for="local">Local <i class="fa fa-map-marker" aria-hidden="true"></i></label>
+                        </div>
+                        <div class="form-group btnLogin">
+                            <input class= "form-control slct" type="date" name="data" id="biografia" placeholder="Digite uma Data" required>   
+                        </div>
+            
+                        <div class="form-group btnLogin">
+                            <input class= "form-control slct" type="text" name="qtdPessoas" id="qtdPessoas" placeholder="Digite a quantidade de pessoas" required>
+                            <label for="qtdPessoas">Quantidade de Pessoas <i class="fa fa-map-marker" aria-hidden="true"></i></label>
+                        </div>
+            
+                        <div class="form-group btnLogin">
+                            <input class= "form-control slct" type="text" name="temaEvento" id="temaEvento" placeholder="Digite o tema do seu evento" required>
+                            <label for="temaEvento">Tema do Evento <i class="fa fa-map-marker" aria-hidden="true"></i></label>
+                        </div>
+                        <div class= "d-flex justify-content-center">
+                            <button class="btnCancel" routerLink= "/entrar">Cancelar</button> <!--lembrar de mudar a rota-->
+                            <button class="btnSend">Enviar</button>
+                        </div>
+            
+                    </div>
             </div>
-            <div class= "d-flex justify-content-center">
-                <button class="btnCancel" routerLink= "/entrar">Cancelar</button> <!--lembrar de mudar a rota-->
-                <button class="btnSend">Enviar</button>
-            </div>
-
         </div>
     </div>
 </div>

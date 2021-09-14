@@ -71,8 +71,8 @@ input:not(:placeholder-shown) + label{
 }
 
 input:not(:placeholder-shown){
-    border-bottom: 2px solid #17b617;
-    box-shadow: 0 2px 0 0 #17b617;
+    border-bottom: 2px solid rgb(010, 182, 218);
+    box-shadow: 0 2px 0 0 rgb(010, 182, 218);
 }
 
 input::placeholder{
@@ -93,8 +93,8 @@ box-shadow: 3px 2px 2px #5b98a39c, 3px 2px 2px #01afff98;
 }
 
 button:hover{
-background-color: #00bb10be;
-box-shadow: 5px 4px 2px #61a35b9c, 5px 4px 2px #01ff624b;
+background-color:rgb(010, 182, 218);
+box-shadow: 5px 4px 2px rgb(242, 005, 197), 5px 4px 2px #01ff624b;
 transition: .35s;
 border: none;
 outline: none;

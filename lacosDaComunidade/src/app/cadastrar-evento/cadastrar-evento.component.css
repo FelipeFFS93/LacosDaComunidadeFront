@@ -1,30 +1,15 @@
 #img-bg{
-    background-image: url("https://images-ext-2.discordapp.net/external/vhQW1svlHzuAHAFPQLvLc720R0l9k_1Z8N07fDOWMVw/https/i.imgur.com/wGm3Eyr.png?width=247&height=300");
-    position: absolute;
+    background-image: url("../../assets/img/pessoas.jpeg");
+
+    min-height: 695px;
+
+    background-position: center;
     background-repeat: no-repeat;
-    margin-top: 40%;
-    left:40%;
-    height: 380px;
-    width: 350px;
-
+    background-size: cover;
 }
 
-
-.box{
-    position: absolute; /*ocupa o proprio espaço dela mesma*/
-    background-image: linear-gradient(#f800d73f,#0277fd54); /*OBS.: Degrade inverso funciona*/
-    top: 50%; /*distancia do topo*/
-    left: 75%; /*distancia do lado esuqerdo*/
-    transform: translate(-50%,-50%); /* para deixar 100% alinhado*/
-    border-radius: 15px;
-    padding: 30px; /*espaço dos elementos para a a borda*/
-    width: 380px; /*largura*/
-    height: 550px; /*altura*/
-}
-
-.box:hover{
-    background-color: #f1000054;
-    transition: .55s ease-in-out;
+.colorBG{
+    background-image: linear-gradient(#fff, rgb(224, 220, 165));
 }
 
 input{
@@ -33,8 +18,8 @@ input{
     background: transparent;
     border: none;
     outline: none;
-    border-bottom: 2px solid #ffffff;
-    color: #ffffff;
+    border-bottom: 2px solid rgb(250, 2, 237);
+    color: #000;
     font-family: Arial, Helvetica, sans-serif; /*sempre por mais de uma*/
     font-size: 20px;
     transition: .20s ease-in-out;
@@ -50,7 +35,7 @@ label{
     top : -15%; 
     left: 2%;
     font-family : Arial , Helvetica , sans-serif; 
-    color: #ffffff;
+    color: #000;
     transform: translateY(10px);
     transition: .20s ease-in-out; 
     margin-top: -5px; /*Lembrar de espaçar na validação*/
@@ -62,98 +47,92 @@ input:focus + label{
 }
 
 .slct{
-    color:white;
+    color:rgb(0, 0, 0);
     background: transparent;
     border: none;
     outline: none;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid rgb(010, 182, 218);
 }
 
 input:focus{
-    border-bottom: 2px solid #17b617;
-    box-shadow: 0 2px 0 0 #17b617;
+    border-bottom: 2px solid rgb(010, 182, 218);
+    box-shadow: 0 2px 0 0 rgb(010, 182, 218);
 }
 
 input:focus + label{
     transform: translateY(-11px) scale(.9);
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 input:not(:placeholder-shown) + label{
     transform: translateY(-11px) scale(.9);
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 input:not(:placeholder-shown){
-    border-bottom: 2px solid #17b617;
-    box-shadow: 0 2px 0 0 #17b617;
+    border-bottom: 2px solid rgb(010, 182, 218);
+    box-shadow: 0 2px 0 0 rgb(010, 182, 218);
 }
 
 input::placeholder{
     color: transparent;
 }
 
-button{
-    padding: 12px 18px;
-    width: 120px;
-    margin-top: 55px; 
-    margin-right: 25px;
-    font-family: Arial, Helvetica, sans-serif; /*sempre por mais de uma*/
-    border: none;
-    border-radius: 11px;
-    align-items: center;
-    background-color: #0dc1cec4;
-    color: rgb(0, 0, 0); /*cor da palavra entrar*/
-    box-shadow: 3px 2px 2px #1201ff9c, 3px 2px 2px #0143ff00;
+.userType{
+    margin-top: 4px;
 }
 
-button:focus{
-    background-color: #00fc1594;
-    transition: .35s;
-    border: none;
-    outline: none;
-}
-
-textarea{
-    cursor: pointer;
-    margin-top: 25px;
-    width: 320px;
-    min-width: none;
-
-    height: 50px;
-    min-height: 150px;
-    max-height: 50px;
-
+.tUser{
+    width: 255px;
+    color: #000;
+    background-color: transparent;
     border:none;
-    border-radius: 15px;
-    text-decoration: none;
     outline: none;
-    background-color: rgba(255, 255, 255, 0.959);
-    margin-bottom: -35px;
+    margin-top: 0; /*não mexer! alinhado com a label*/
+    margin-left: 145px; /*não mexer! alinhado com a label*/
+    cursor: pointer;
 }
 
-.descricao{
-    margin-top: 12px;
+.opt{
+    background-color: rgba(82, 114, 202, 0.589);
+    color: #000;
+    cursor: pointer;
 }
 
+button{
+padding: 12px 18px;
+width: 120px;
+margin-top: 55px; 
+margin-right: 25px;
+font-family: Arial, Helvetica, sans-serif; /*sempre por mais de uma*/
+border: none;
+border-radius: 11px;
+align-items: center;
+background-color: #56d9dd96;
+color: rgb(0, 0, 0); /*cor da palavra entrar*/
+box-shadow: 3px 2px 2px #5b98a39c, 3px 2px 2px #01afff98;
+}
+
+button:hover{
+background-color: #00bb10be;
+box-shadow: 5px 4px 2px #89b8855d, 5px 4px 2px #01ff622d;
+transition: .35s;
+border: none;
+outline: none;
+}
 
 .btnCancel:hover{
     font-family: Arial, Helvetica, sans-serif;
-    box-shadow: 6px 5px 5px #f80202e5, 5px 5px 5px #0143ff00;
+    box-shadow: 3px 2px 2px #f80240ab, 5px 5px 5px #ffffffe1;
     background-color: #fc2600d8;
     transition: .55s;
 }
 
 
-.btnSend:hover{
+.btnCad:hover{
     font-family: Arial, Helvetica, sans-serif;
-    box-shadow: 6px 5px 5px #aef802e5, 5px 5px 5px #0143ff00;
+    box-shadow: 3px 2px 2px rgb(010, 182, 218), 5px 5px 5px #cdcfd498;
     color: #000;
-    background-color: #00fc1594;
+    background-color: rgb(242, 005, 197);
     transition: .55s;
-}
-
-.cad{
-    text-decoration: none;
-    color: #fff;
 }

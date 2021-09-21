@@ -34,7 +34,6 @@ export class InicioComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-
     window.scroll(0,0)
 
     if (environment.token == "") {
@@ -64,11 +63,11 @@ export class InicioComponent implements OnInit {
     })
   }
 
-  // findByIdUser(){
-  //   this.authService.getByIdUser(this.idUser).subscribe((resp: Usuario) => {
-  //     this.user = resp
-  //   })
-  // }
+  findByIdUser(){
+    this.authService.getByIdUser(this.idUser).subscribe((resp: Usuario) => {
+      this.user = resp
+    })
+  }
 
   publicar() {
     this.tema.id = this.idTema
@@ -79,10 +78,9 @@ export class InicioComponent implements OnInit {
 
     this.postagemService.postPostagem(this.postagem).subscribe((resp: Postagem) => {
       this.postagem = resp
-
       alert("Postagem realizada com sucesso!")
-
-      this.postagem = new Postagem
+      this.postagem = new Postagem()
+      this.getAllPostagens()
     })
     
   }

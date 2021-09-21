@@ -4,7 +4,7 @@
         <div class="col-md-12">
 
             <div class="row d-flex justify-content-center">
-                <div class="col-md-6 text-white">
+                <div class="col-md-6 text-white mtBV">
                     <h1 class="fs-50">Seja bem vinde ao <br> Laços da Comunidade!</h1>
                     <h5 class="fs-20">Cadastre seu evento de para mudar a sociedade!!</h5>
                 </div>
@@ -26,7 +26,7 @@
 
 </div>
 
-<div class="container mb-g mt-5" id="postagens">
+<div class="container mb-g mt-3" id="postagens">
 
     <nav>
         <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
@@ -48,11 +48,24 @@
 
 
 
-    <div class="tab-content" id="nav-tabContent">
+    <div class="tab-content mt-5" id="nav-tabContent">
 
         <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel"
             aria-labelledby="nav-todasPostagens-tab">
-            Todos Eventos
+            <div class="card" *ngFor='let item of listaPostagens'>
+                <div class="card-body">
+                    <h5 class="card-title">{{item.nomeEvento}}</h5>
+                    <p class="card-text">Evento beneficente com o intuito de fazer doação de cestas básicas para familias de baixa renda na região da Zona Norte de São Paulo</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <h5 class="card-title">{{item.tipoEvento}}</h5>
+
+                    <li class="list-group-item">Local: <br>Jardim Fontalis</li>
+                    <li class="list-group-item">Data:<br>28/09/2021</li>
+                    <li class="list-group-item">Quantidade de pessoas: <br>80</li>
+                </ul>
+                
+            </div>
         </div>
 
         <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="nav-minhasPostagens-tab">
@@ -65,6 +78,17 @@
     </div>
 
 </div>
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- Modal-->
 <div class="modal fade" id="novaPostagem" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
@@ -88,18 +112,18 @@
                 <div class="form-group">
                     <label for="titulo">Tipo do Evento</label>
                     <input [(ngModel)]="postagem.tipoEvento" type="text" class="form-control"
-                        placeholder="Digite o tipo do evento" id="titulo">
+                        placeholder="Digite o tipo do evento" id="tipoEvento">
                 </div>
 
                 <div class="form-group">
                     <label for="titulo">Site da organização</label>
                     <input [(ngModel)]="postagem.site" type="text" class="form-control"
-                        placeholder="Digite o site da organização" id="titulo">
+                        placeholder="Digite o site da organização" id="site">
                 </div>
 
                 <div class="form-group">
                     <label for="texto">Descrição do Evento</label>
-                    <textarea name="texto" class="form-control" id="texto" placeholder="Digite a descrição do evento"
+                    <textarea name="texto" class="form-control" id="descricao" placeholder="Digite a descrição do evento"
                         rows="3"></textarea>
                 </div>
 
@@ -124,62 +148,3 @@
         </div>
     </div>
 </div>
-
-
-<!--cards-->
-<div class="card-deck bgcard">
-    <div class="card">
-        <img class="card-img-top" src="../../assets/img/evento 3.jpg" alt="Imagem de capa do card">
-        <div class="card-body">
-            <h5 class="card-title">Educação </h5>
-            <p class="card-text">Feiras de eduação na zona sul, eduação infantil atraves de professores colaboradores.
-                Ensino complementar sobre assuntos diversos do card.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">Local: <br>Varginha Zona Sul </li>
-            <li class="list-group-item">Data: <br>29/10/2021</li>
-            <li class="list-group-item">Quantidade de pessoas: <br>30 </li>
-        </ul>
-        <!-- <div class="card-body">
-            <a href="#" class="card-link">Link do card</a>
-            <a href="#" class="card-link">Outro link</a>
-        </div> -->
-    </div>
-
-    <div class="card">
-        <img class="card-img-top" src="../../assets/img/evento 1.jpg" alt="Imagem de capa do card">
-        <div class="card-body">
-            <h5 class="card-title">Doação de cestas básicas</h5>
-            <p class="card-text">Evento beneficente com o intuito de fazer doação de cestas básicas para familias de baixa renda na região da Zona Norte de São Paulo</p>
-        </div>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">Local: <br>Jardim Fontalis</li>
-            <li class="list-group-item">Data:<br>28/09/2021</li>
-            <li class="list-group-item">Quantidade de pessoas: <br>80</li>
-        </ul>
-        <!-- <div class="card-body">
-            <a href="#" class="card-link">Link do card</a>
-            <a href="#" class="card-link">Outro link</a>
-        </div> -->
-    </div>
-
-    <!-- <div class="card">
-        <img class="card-img-top" src="../../assets/img/185677200_1767923020064955_8313233264869039728_n.jpg" alt="Imagem de capa do card">
-        <div class="card-body">
-            <h5 class="card-title">Título do card</h5>
-            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
-                do card.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
-        <div class="card-body">
-            <a href="#" class="card-link">Link do card</a>
-            <a href="#" class="card-link">Outro link</a>
-        </div>
-    </div> -->
-</div>
-<br>
-<!--/cards-->

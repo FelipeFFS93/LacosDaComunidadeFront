@@ -80,16 +80,6 @@
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
 <!-- Modal-->
 <div class="modal fade" id="novaPostagem" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
     aria-hidden="true">
@@ -132,9 +122,10 @@
                     <label for="texto">Escolha um tema ou <a data-dismiss="modal"
                             routerLink="/cadastrar-evento">cadastre um
                             novo</a>: </label>
-                    <select class="form-control" name="tema" id="tema">
-                        <option>
-
+                    <select class="form-control" name="tema" id="tema" [(ngModel)]='idTema'
+                    (change)='findByIdTema()'>
+                        <option *ngFor='let item of listaTemas' value="{{item.id}}">
+                            {{item.temaEvento}}
                         </option>
                     </select>
                 </div>

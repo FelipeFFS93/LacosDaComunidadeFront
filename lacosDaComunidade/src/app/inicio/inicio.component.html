@@ -31,16 +31,16 @@
     <nav>
         <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
 
-            <a class="nav-item nav-link active text-secondary font-weight-bold" id="nav-todasPostagens-tab"
-                data-toggle="tab" href="#todasPostagens" role="tab" aria-controls="nav-todasPostagens"
+            <a class="nav-item nav-link active text-secondary font-weight-bold" id="nav-todosEventos-tab"
+                data-toggle="tab" href="#todosEventos" role="tab" aria-controls="nav-todosEventos"
                 aria-selected="true">Todos Eventos</a>
 
-            <a class="nav-item nav-link text-secondary font-weight-bold" id="nav-minhasPostagens-tab" data-toggle="tab"
-                href="#minhasPostagens" role="tab" aria-controls="nav-minhasPostagens" aria-selected="false">Seus
+            <a class="nav-item nav-link text-secondary font-weight-bold" id="nav-meusEventos-tab" data-toggle="tab"
+                href="#meusEventos" role="tab" aria-controls="nav-meusEventos" aria-selected="false">Meus
                 Eventos</a>
 
-            <a class="nav-item nav-link text-secondary font-weight-bold" id="nav-postagemTema-tab" data-toggle="tab"
-                href="#postagemTema" role="tab" aria-controls="nav-postagemTema" aria-selected="false">Eventos por
+            <a class="nav-item nav-link text-secondary font-weight-bold" id="nav-eventoTema-tab" data-toggle="tab"
+                href="#eventoTema" role="tab" aria-controls="nav-eventoTema" aria-selected="false">Eventos por
                 Tema</a>
         </div>
     </nav>
@@ -50,29 +50,33 @@
 
     <div class="tab-content mt-5" id="nav-tabContent">
 
-        <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel"
-            aria-labelledby="nav-todasPostagens-tab">
-            <div class="card" *ngFor='let item of listaPostagens'>
-                <div class="card-body">
-                    <h5 class="card-title">{{item.nomeEvento}}</h5>
-                    <p class="card-text">Evento beneficente com o intuito de fazer doação de cestas básicas para familias de baixa renda na região da Zona Norte de São Paulo</p>
+        <div class="tab-pane fade show active" id="todosEventos" role="tabpanel"
+            aria-labelledby="nav-todosEventos-tab">
+
+            <div class="card-columns">
+                <div class="card text-center" *ngFor='let item of listaPostagens'>
+                    <div class="card-body">
+                        <h5 class="card-title m-0">{{item.nomeEvento}}</h5>
+                        <p class="text-muted"> Tipo do evento: {{item.tipoEvento}}</p>
+                        <p class="text-muted"> Site da Organização: {{item.site}}</p>
+                        <p class="text-muted"> Descrição do evento: {{item.descricaoPessoas}}</p>
+                        <p class="text-muted"> Quantidade de pesoas: {{item.tema.quantPessoas}}</p>
+
+                        <p class="card-text"><small class="text-muted">
+                                Postagem de: {{item.usuario.nome}}
+                            </small></p>
+                    </div>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <h5 class="card-title">{{item.tipoEvento}}</h5>
-
-                    <li class="list-group-item">Local: <br>Jardim Fontalis</li>
-                    <li class="list-group-item">Data:<br>28/09/2021</li>
-                    <li class="list-group-item">Quantidade de pessoas: <br>80</li>
-                </ul>
-                
             </div>
+
         </div>
 
-        <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="nav-minhasPostagens-tab">
-            Seus Eventos
+
+        <div class="tab-pane fade" id="meusEventos" role="tabpanel" aria-labelledby="nav-meusEventos-tab">
+            Meus Eventos
         </div>
 
-        <div class="tab-pane fade" id="postagemTema" role="tabpanel" aria-labelledby="nav-postagemTema-tab">
+        <div class="tab-pane fade" id="eventoTema" role="tabpanel" aria-labelledby="nav-EventoTema-tab">
             Eventos por Tema
         </div>
     </div>
@@ -94,7 +98,7 @@
             <div class="modal-body">
 
                 <div class="form-group">
-                    <label for="titulo">Evento</label>
+                    <label for="titulo">Nome do Evento</label>
                     <input [(ngModel)]="postagem.nomeEvento" type="text" class="form-control"
                         placeholder="Digite o nome do evento" id="titulo">
                 </div>

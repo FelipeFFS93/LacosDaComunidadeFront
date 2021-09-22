@@ -5,7 +5,6 @@ import { Postagem } from '../model/postagem';
 import { Tema } from '../model/tema';
 import { Usuario } from '../model/user';
 import { AuthService } from '../service/auth.service';
-
 import { PostagemService } from '../service/postagem.service';
 import { TemaService } from '../service/tema.service';
 

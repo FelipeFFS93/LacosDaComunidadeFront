@@ -24,7 +24,7 @@ export class PostagemService {
   }
 
   getByLocalEvento(nomeEvento: string): Observable<Postagem>{
-    return this.http.get<Postagem>(`https://lacosdacomunidade.herokuapp.com/tema/nomeEvento/${nomeEvento}`, this.token)
+    return this.http.get<Postagem>(`https://lacosdacomunidade.herokuapp.com/postagem/nomeEvento/${nomeEvento}`, this.token)
   }
 
   postPostagem(postagem: Postagem): Observable<Postagem>{
@@ -36,7 +36,7 @@ export class PostagemService {
   }
 
   deletePostagem(id: number){
-    return this.http.delete("https://lacosdacomunidade.herokuapp.com/postagem/${id}", this.token)
+    return this.http.delete(`https://lacosdacomunidade.herokuapp.com/postagem/${id}`, this.token)
   }
 
 

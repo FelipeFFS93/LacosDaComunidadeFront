@@ -22,7 +22,7 @@ export class InicioComponent implements OnInit {
   listaTemas: Tema[]
   idTema: number
 
-  user: Usuario = new Usuario
+  user: Usuario = new Usuario()
   idUser = environment.id
 
   constructor(
@@ -81,7 +81,6 @@ export class InicioComponent implements OnInit {
       this.postagem = new Postagem()
       this.getAllPostagens()
     })
-    
   }
 
 

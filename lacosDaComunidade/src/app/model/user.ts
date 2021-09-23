@@ -6,7 +6,7 @@ export class Usuario{
     public nome: string
     public usuario: string
     public senha: string
-    // public token:string
+    public token:string
     public ongs: string
     public genero: string
     public CPF: string

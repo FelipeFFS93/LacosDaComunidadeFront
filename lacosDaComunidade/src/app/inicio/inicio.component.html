@@ -118,7 +118,7 @@
 
                 <div class="form-group">
                     <label for="descricaoPessoas">Descrição do Evento</label>
-                    <textarea  [(ngModel)]="postagem.descricaoPessoas" name="texto" class="form-control" id="descricaoPessoas"
+                    <textarea [(ngModel)]="postagem.descricaoPessoas" name="texto" class="form-control" id="descricaoPessoas"
                         placeholder="Digite a descrição do evento" rows="3"></textarea>
                 </div>
 
@@ -133,10 +133,11 @@
                         </option>
                     </select>
                 </div>
+
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-success" (click)="publicar()" data-dismiss="modal">Publicar</button>
+                <button type="button" class="btn btn-success" (click)='publicar()' data-dismiss="modal">Publicar</button>
             </div>
         </div>
     </div>

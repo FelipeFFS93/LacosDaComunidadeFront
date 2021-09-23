@@ -35,7 +35,7 @@
                         </div>
                         <div class= "d-flex justify-content-center">
                             <button class="btnCancel" routerLink= "/inicio">Cancelar</button> <!--lembrar de mudar a rota-->
-                            <button class="btnSend" (click)='cadastrar()'>Cadastrar</button>
+                            <button class="btnCad" (click)='cadastrar()'>Cadastrar</button>
                         </div>
             
                     </div>
@@ -56,8 +56,8 @@
                             <th>{{item.id}}</th>
                             <td>{{item.temaEvento}}</td>
                             <td class="d-flex justify-content-center">
-                                <button class="btn btn-info mr-3" [routerLink]="['/tema-edit', item.id]">Editar</button>
-                                <button class="btn btn-danger" [routerLink]="['/tema-delete', item.id]">Apagar</button>
+                                <button class="btn mr-3 btnCad " [routerLink]="['/tema-edit', item.id]">Editar</button>
+                                <button class="btn btnCancel " [routerLink]="['/tema-delete', item.id]">Apagar</button>
                             </td>
                         </tr>
                     </tbody>

@@ -13,7 +13,7 @@
             <div class="row d-flex justify-content-center mt-4 mb-5">
                 <div class="col-md-3">
                     <div class="form-group">
-                        <input [(ngModel)]='tema.temaEvento' type="text" class="form-control inputDescricao"
+                        <input [(ngModel)]='tema.descricao' type="text" class="form-control inputDescricao"
                             id="descricao" placeholder="Digite a descrição do tema">
                     </div>
 
@@ -50,7 +50,7 @@
                 <tbody>
                     <tr *ngFor='let item of listaTemas'>
                         <th>{{item.id}}</th>
-                        <td>{{item.temaEvento}}</td>
+                        <td>{{item.descricao}}</td>
                         <td class="d-flex justify-content-end">
                             <button class="btn  mr-3" [routerLink]="['/tema-edit', item.id]">Editar</button>
                             <button class="btn " [routerLink]="['/tema-delete', item.id]">Apagar</button>

@@ -16,27 +16,27 @@ export class PostagemService {
   }
 
   getAllPostagens(): Observable<Postagem[]>{
-    return this.http.get<Postagem[]>('https://lacosdacomunidade.herokuapp.com/postagem', this.token)
+    return this.http.get<Postagem[]>('https://lacosv2.herokuapp.com/postagem', this.token)
   }
 
-  getByIdTema(id: number): Observable<Postagem>{
-    return this.http.get<Postagem>(`https://lacosdacomunidade.herokuapp.com/postagem/${id}`, this.token)
+  getByIdPostagem(id: number): Observable<Postagem>{
+    return this.http.get<Postagem>(`https://lacosv2.herokuapp.com/postagem/${id}`, this.token)
   }
 
-  getByLocalEvento(nomeEvento: string): Observable<Postagem>{
-    return this.http.get<Postagem>(`https://lacosdacomunidade.herokuapp.com/postagem/nomeEvento/${nomeEvento}`, this.token)
-  }
+  // getByNomeEvento(nomeEvento: string): Observable<Postagem>{
+  //   return this.http.get<Postagem>(`https://lacosv2.herokuapp.com/postagem/nomeEvento/${nomeEvento}`, this.token)
+  // }
 
   postPostagem(postagem: Postagem): Observable<Postagem>{
-    return this.http.post<Postagem>("https://lacosdacomunidade.herokuapp.com/postagem", postagem, this.token)
+    return this.http.post<Postagem>('https://lacosv2.herokuapp.com/postagem', postagem, this.token)
   }
 
   putPostagem(postagem: Postagem): Observable<Postagem>{
-    return this.http.put<Postagem>("https://lacosdacomunidade.herokuapp.com/postagem", postagem, this.token)
+    return this.http.put<Postagem>('https://lacosv2.herokuapp.com/postagem', postagem, this.token)
   }
 
   deletePostagem(id: number){
-    return this.http.delete(`https://lacosdacomunidade.herokuapp.com/postagem/${id}`, this.token)
+    return this.http.delete(`https://lacosv2.herokuapp.com/postagem/${id}`, this.token)
   }
 
 

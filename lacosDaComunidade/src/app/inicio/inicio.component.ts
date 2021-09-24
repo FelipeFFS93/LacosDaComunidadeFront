@@ -8,6 +8,7 @@ import { AuthService } from '../service/auth.service';
 import { PostagemService } from '../service/postagem.service';
 import { TemaService } from '../service/tema.service';
 
+
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',
@@ -22,8 +23,11 @@ export class InicioComponent implements OnInit {
   listaTemas: Tema[]
   idTema: number
 
-  user: Usuario = new Usuario()
+  user: Usuario = new Usuario
   idUser = environment.id
+
+  key: 'data'
+  reverse = true /*reverte a ordem das postagens, onde a ultima fica amostra em primeiro lugar*/
 
   constructor(
     private router: Router,
@@ -35,28 +39,28 @@ export class InicioComponent implements OnInit {
   ngOnInit() {
     window.scroll(0,0)
 
-    if (environment.token == "") {
-      // alert("Sua seção expirou, faça o login novamente.")
-      this.router.navigate(["/entrar"])
+    if(environment.token == ''){
+      //alert('Sua sessão expirou, faça o login novamente!')
+      this.router.navigate(['/entrar'])
     }
-
+    
     this.getAllTemas()
     this.getAllPostagens()
   }
 
-  getAllTemas() {
-    this.temaService.getAllTema().subscribe((resp: Tema[]) => {
+  getAllTemas(){
+    this.temaService.getAllTema().subscribe((resp: Tema[]) =>{
       this.listaTemas = resp
     })
   }
 
-  findByIdTema() {
-    this.temaService.getByIdTema(this.idTema).subscribe((resp: Tema) => {
+  findByIdTema(){
+    this.temaService.getByIdTema(this.idTema).subscribe((resp: Tema) =>{
       this.tema = resp
     })
   }
 
-  getAllPostagens() {
+  getAllPostagens(){
     this.postagemService.getAllPostagens().subscribe((resp: Postagem[]) => {
       this.listaPostagens = resp
     })
@@ -68,7 +72,8 @@ export class InicioComponent implements OnInit {
     })
   }
 
-  publicar() {
+
+  publicar(){
     this.tema.id = this.idTema
     this.postagem.tema = this.tema
 
@@ -77,11 +82,10 @@ export class InicioComponent implements OnInit {
 
     this.postagemService.postPostagem(this.postagem).subscribe((resp: Postagem) => {
       this.postagem = resp
-      alert("Postagem realizada com sucesso!")
-      this.postagem = new Postagem()
+      alert('Postagem realizada com sucesso!')
+      this.postagem = new Postagem() //limpar os campos do modal
       this.getAllPostagens()
     })
   }
-
 
 }

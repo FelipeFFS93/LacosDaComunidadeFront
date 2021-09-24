@@ -1,0 +1,49 @@
+.colorBG{
+    background-image: linear-gradient(#fff, rgb(224, 220, 165));
+}
+
+button{
+    padding: 12px 18px;
+    width: 120px;
+    margin-top: 55px; 
+    margin-right: 25px;
+    font-family: Arial, Helvetica, sans-serif; /*sempre por mais de uma*/
+    border: none;
+    border-radius: 11px;
+    align-items: center;
+    background-color: #56d9dd96;
+    color: rgb(0, 0, 0); /*cor da palavra entrar*/
+    box-shadow: 3px 2px 2px #5b98a39c, 3px 2px 2px #01afff98;
+    }
+    
+    button:hover{
+    background-color: #00bb10be;
+    box-shadow: 5px 4px 2px #89b8855d, 5px 4px 2px #01ff622d;
+    transition: .35s;
+    border: none;
+    outline: none;
+    }
+    
+    .btnCancel:hover{
+        font-family: Arial, Helvetica, sans-serif;
+        box-shadow: 3px 2px 2px #f80240ab, 5px 5px 5px #ffffffe1;
+        background-color: #fc2600d8;
+        transition: .55s;
+    }
+    
+    
+    .btnCad:hover{
+        font-family: Arial, Helvetica, sans-serif;
+        box-shadow: 3px 2px 2px rgb(242, 005, 197), 5px 5px 5px #cdcfd498;
+        color: #000;
+        background-color: rgb(010, 182, 218); 
+    }
+    
+    .btnSend:hover{
+        box-shadow: 5px 4px 2px rgb(242, 005, 197), 5px 4px 2px #2f3b344b;
+    }
+
+    .mt-negativo{
+
+        margin-bottom: 90px;
+    }

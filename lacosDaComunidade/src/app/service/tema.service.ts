@@ -16,27 +16,27 @@ export class TemaService {
   }
 
   getAllTema(): Observable<Tema[]>{
-    return this.http.get<Tema[]>("https://lacosdacomunidade.herokuapp.com/tema", this.token)
+    return this.http.get<Tema[]>("https://lacosv2.herokuapp.com/tema", this.token)
   }
 
   getByIdTema(id: number): Observable<Tema>{
-    return this.http.get<Tema>(`https://lacosdacomunidade.herokuapp.com/tema/${id}`, this.token)
+    return this.http.get<Tema>(`https://lacosv2.herokuapp.com/tema/${id}`, this.token)
   }
   
-  getByLocalEvento(localEvento: string): Observable<Tema>{
-    return this.http.get<Tema>(`https://lacosdacomunidade.herokuapp.com/tema/local_evento/${localEvento}`, this.token)
-  }
+  // getByLocalEvento(localEvento: string): Observable<Tema>{
+  //   return this.http.get<Tema>(`https://lacosv2.herokuapp.com/tema/local_evento/${localEvento}`, this.token)
+  // }
 
   postTema(tema: Tema): Observable<Tema>{
-    return this.http.post<Tema>("https://lacosdacomunidade.herokuapp.com/tema",tema,this.token)
+    return this.http.post<Tema>("https://lacosv2.herokuapp.com/tema",tema, this.token)
   }
 
   putTema(tema: Tema): Observable<Tema>{
-    return this.http.put<Tema>("https://lacosdacomunidade.herokuapp.com/tema", tema, this.token)
+    return this.http.put<Tema>("https://lacosv2.herokuapp.com/tema", tema, this.token)
   }
 
   deleteTema(id: number){
-    return this.http.delete(`https://lacosdacomunidade.herokuapp.com/tema/${id}`, this.token)
+    return this.http.delete(`https://lacosv2.herokuapp.com/tema/${id}`, this.token)
   }
 
 }

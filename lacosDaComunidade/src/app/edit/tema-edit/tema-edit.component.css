@@ -53,3 +53,12 @@ button:hover{
             font-size: 20px;
             transition: .20s ease-in-out;
         }    
+
+        .colorBG{
+            background-image: linear-gradient(#fff, rgb(224, 220, 165));
+        }
+
+        .mt-negativo{
+
+            margin-bottom: 90px;
+        }

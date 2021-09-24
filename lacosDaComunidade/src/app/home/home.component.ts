@@ -20,4 +20,9 @@ export class HomeComponent implements OnInit {
 
   }
 
+  enviar(){
+    alert('Tema atualizado com sucesso!')
+    
+  }
+
 }

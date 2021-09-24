@@ -15,23 +15,23 @@ export class AuthService {
   ) { }
 
 
-  entrar(userLogin: UsuarioLogin): Observable<UsuarioLogin>{
-    return this.http.post<UsuarioLogin>('https://lacosdacomunidade.herokuapp.com/usuario/logar', userLogin)
+  entrar(userLogin: UsuarioLogin): Observable<UsuarioLogin> {
+    return this.http.post<UsuarioLogin>('https://lacosv2.herokuapp.com/usuarios/logar', userLogin)
   }
 
-  cadastrar(user: Usuario): Observable<Usuario>{
-    return this.http.post<Usuario>('https://lacosdacomunidade.herokuapp.com/usuario/cadastrar', user)
+  cadastrar(user: Usuario): Observable<Usuario> {
+    return this.http.post<Usuario>('https://lacosv2.herokuapp.com/usuarios/cadastrar', user)
   }
 
- getByIdUser(id: number): Observable<Usuario>{
-   return this.http.get<Usuario>(`https://lacosdacomunidade.herokuapp.com/usuario/${id}`)
+  getByIdUser(id: number): Observable<Usuario> {
+    return this.http.get<Usuario>(`https://lacosv2.herokuapp.com/usuarios/${id}`)
   }
 
 
-  logado(){
+  logado() {
     let ok: boolean = false
 
-    if (environment.token != ''){
+    if (environment.token != '') {
       ok = true
     }
 

@@ -1,25 +1,27 @@
-<div class="container mt-5 mb-5">
+<div class= "colorBG">
+    <div class="container ">
 
-    <div class="row">
-        <div class="col-md-12">
-            <h1 class="text-center ">Atualizar Tema</h1>
-        </div>
-    </div>
-
-    <div class="row d-flex justify-content-center">
-        <div class="col-md-6">
-
-            <div class="form-group">
-                <label for="descricao">Descrição</label>
-                <input type="text" class="form-control" id="descricao" [(ngModel)]='tema.temaEvento'>
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center ">Atualizar Tema</h1>
             </div>
-
-            <div class="d-flex justify-content-center">
-                <button class="btn btnCancel mr-4" routerLink='/cadastrar-evento'>Cancelar</button>
-                <button class="btn btnCad " (click)='atualizar()'>Atualizar</button>
-            </div>
-
         </div>
+    
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6">
+    
+                <div class="form-group">
+                    <label for="descricao">Descrição</label>
+                    <input type="text" class="form-control" id="descricao" [(ngModel)]='tema.descricao'>
+                </div>
+    
+                <div class=" mt-negativo d-flex justify-content-center">
+                    <button class="btn btnCancel mr-4" routerLink='/cadastrar-evento'>Cancelar</button>
+                    <button class="btn btnCad " (click)='atualizar()'>Atualizar</button>
+                </div>
+    
+            </div>
+        </div>
+    
     </div>
-
 </div>

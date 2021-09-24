@@ -85,3 +85,16 @@
 
         margin-top: -80px;
     }
+
+    .botao3{
+        padding: 12px 18px;
+        width: 180px;
+        margin-right: 25px;
+        font-family: Arial, Helvetica, sans-serif; /*sempre por mais de uma*/
+        border: none;
+        border-radius: 11px;
+        align-items: center;
+        background-color: #56d9dd96;
+        color: rgb(0, 0, 0); /*cor da palavra entrar*/
+        box-shadow: 3px 2px 2px #5b98a39c, 3px 2px 2px #01afff98;
+        }

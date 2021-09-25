@@ -139,3 +139,7 @@ outline: none;
 .btnSend:hover{
     box-shadow: 5px 4px 2px rgb(242, 005, 197), 5px 4px 2px #2f3b344b;
 }
+
+.mtNgtv{
+    margin-top: -25px;
+}

@@ -1,0 +1,1053 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>lacos-da-comunidade documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">lacos-da-comunidade documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  UserEditComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/edit/user-edit/user-edit.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-user-edit</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./user-edit.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./user-edit.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#confirmarSenha" >confirmarSenha</a>
+                            </li>
+                            <li>
+                                <a href="#idUser" >idUser</a>
+                            </li>
+                            <li>
+                                <a href="#tipoUsuario" >tipoUsuario</a>
+                            </li>
+                            <li>
+                                <a href="#user" >user</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#atualizar" >atualizar</a>
+                            </li>
+                            <li>
+                                <a href="#confirmSenha" >confirmSenha</a>
+                            </li>
+                            <li>
+                                <a href="#findByIdUser" >findByIdUser</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#tipoUser" >tipoUser</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(authService: <a href="../injectables/AuthService.html" target="_self">AuthService</a>, route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, alertas: <a href="../injectables/AlertasService.html" target="_self">AlertasService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/edit/user-edit/user-edit.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>authService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AuthService.html" target="_self" >AuthService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>alertas</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AlertasService.html" target="_self" >AlertasService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="atualizar"></a>
+                    <span class="name">
+                        <span ><b>atualizar</b></span>
+                        <a href="#atualizar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>atualizar()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="47"
+                            class="link-to-prism">src/app/edit/user-edit/user-edit.component.ts:47</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="confirmSenha"></a>
+                    <span class="name">
+                        <span ><b>confirmSenha</b></span>
+                        <a href="#confirmSenha"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>confirmSenha(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="39"
+                            class="link-to-prism">src/app/edit/user-edit/user-edit.component.ts:39</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="findByIdUser"></a>
+                    <span class="name">
+                        <span ><b>findByIdUser</b></span>
+                        <a href="#findByIdUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>findByIdUser(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="67"
+                            class="link-to-prism">src/app/edit/user-edit/user-edit.component.ts:67</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="28"
+                            class="link-to-prism">src/app/edit/user-edit/user-edit.component.ts:28</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="tipoUser"></a>
+                    <span class="name">
+                        <span ><b>tipoUser</b></span>
+                        <a href="#tipoUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>tipoUser(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="43"
+                            class="link-to-prism">src/app/edit/user-edit/user-edit.component.ts:43</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="confirmarSenha"></a>
+                    <span class="name">
+                        <span ><b>confirmarSenha</b></span>
+                        <a href="#confirmarSenha"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/edit/user-edit/user-edit.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="idUser"></a>
+                    <span class="name">
+                        <span ><b>idUser</b></span>
+                        <a href="#idUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/edit/user-edit/user-edit.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="tipoUsuario"></a>
+                    <span class="name">
+                        <span ><b>tipoUsuario</b></span>
+                        <a href="#tipoUsuario"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/edit/user-edit/user-edit.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="user"></a>
+                    <span class="name">
+                        <span ><b>user</b></span>
+                        <a href="#user"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Usuario.html" target="_self" >Usuario</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Usuario()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/edit/user-edit/user-edit.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { ActivatedRoute, Router } from &#x27;@angular/router&#x27;;
+import { Usuario } from &#x27;src/app/model/user&#x27;;
+import { AlertasService } from &#x27;src/app/service/alertas.service&#x27;;
+import { AuthService } from &#x27;src/app/service/auth.service&#x27;;
+import { environment } from &#x27;src/environments/environment.prod&#x27;;
+
+@Component({
+  selector: &#x27;app-user-edit&#x27;,
+  templateUrl: &#x27;./user-edit.component.html&#x27;,
+  styleUrls: [&#x27;./user-edit.component.css&#x27;]
+})
+export class UserEditComponent implements OnInit {
+
+  user: Usuario &#x3D; new Usuario()
+  idUser: number
+  confirmarSenha: string
+  tipoUsuario: string
+
+  constructor(
+    private authService: AuthService,
+    private route: ActivatedRoute,
+    private router: Router,
+    private alertas: AlertasService
+    
+  ) { }
+
+  ngOnInit() {
+    window.scroll(0, 0)
+
+    if (environment.token &#x3D;&#x3D; &#x27;&#x27;) {
+      this.router.navigate([&#x27;/entrar&#x27;])
+    }
+
+    this.idUser &#x3D; this.route.snapshot.params[&#x27;id&#x27;]
+    this.findByIdUser(this.idUser)
+  }
+
+  confirmSenha(event: any) {
+    this.confirmarSenha &#x3D; event.target.value
+  }
+
+  tipoUser(event: any) {
+    this.tipoUsuario &#x3D; event.target.value
+  }
+
+  atualizar() {
+    this.user.tipo &#x3D; this.tipoUsuario
+
+    if (this.user.senha !&#x3D; this.confirmarSenha) {
+      alert(&#x27;A senhas estão incorretas.&#x27;)
+    } else {
+      this.authService.cadastrar(this.user).subscribe((resp: Usuario) &#x3D;&gt; {
+        this.user &#x3D; resp
+        this.router.navigate([&#x27;/inicio&#x27;])
+        this.alertas.showAlertInfo(&#x27;Usuário atualizado com sucesso, faça o login novamente!&#x27;)
+        environment.token &#x3D; &#x27;&#x27;
+        environment.nome &#x3D; &#x27;&#x27;
+        environment.foto &#x3D; &#x27;&#x27;
+        environment.id &#x3D; 0
+
+        this.router.navigate([&#x27;/entrar&#x27;])
+      })
+    }
+  }
+
+  findByIdUser(id: number) {
+    this.authService.getByIdUser(id).subscribe((resp: Usuario) &#x3D;&gt; {
+      this.user &#x3D; resp
+    })
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;colorBG&quot;&gt;
+    &lt;div class&#x3D;&quot;container mb-5 mt-5&quot;&gt;
+
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+            &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+                &lt;h1 class&#x3D;&quot;text-center text-sencondary&quot;&gt;Atualizar meu Login&lt;/h1&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    
+        &lt;div class&#x3D;&quot;row-wrap d-flex justify-content-center&quot;&gt;
+            &lt;div class&#x3D;&quot;col-md-4&quot;&gt;
+    
+                &lt;div class&#x3D;&quot;form-group btnLogin&quot;&gt;
+                    &lt;input [(ngModel)]&#x3D;&#x27;user.nome&#x27; class&#x3D;&quot;form-control&quot; type&#x3D;&quot;text&quot; name&#x3D;&quot;nome&quot; id&#x3D;&quot;nome&quot;
+                        placeholder&#x3D;&quot;Seu nome&quot;&gt;
+                    &lt;label for&#x3D;&quot;nome&quot;&gt;Nome&lt;/label&gt;
+                &lt;/div&gt;
+    
+                &lt;div class&#x3D;&quot;form-group btnLogin&quot;&gt;
+                    &lt;input [(ngModel)]&#x3D;&#x27;user.usuario&#x27; class&#x3D;&quot;form-control&quot; type&#x3D;&quot;text&quot; name&#x3D;&quot;usuario&quot; id&#x3D;&quot;usuario&quot;
+                        placeholder&#x3D;&quot;Seu usuário&quot;&gt;
+                    &lt;label for&#x3D;&quot;usuario&quot;&gt;Usuário&lt;/label&gt;
+                &lt;/div&gt;
+    
+                &lt;div class&#x3D;&quot;form-group btnLogin&quot;&gt;
+                    &lt;input [(ngModel)]&#x3D;&#x27;user.foto&#x27; class&#x3D;&quot;form-control&quot; type&#x3D;&quot;text&quot; name&#x3D;&quot;foto&quot; id&#x3D;&quot;foto&quot;
+                        placeholder&#x3D;&quot;Link da sua foto&quot;&gt;
+                    &lt;label for&#x3D;&quot;foto&quot;&gt;Link da Foto&lt;/label&gt;
+                &lt;/div&gt;
+    
+                &lt;div class&#x3D;&quot;form-group btnLogin&quot;&gt;
+                    &lt;input (input)&#x3D;&#x27;confirmSenha($event)&#x27; class&#x3D;&quot;form-control&quot; type&#x3D;&quot;password&quot; name&#x3D;&quot;senha&quot; id&#x3D;&quot;senha&quot;
+                        placeholder&#x3D;&quot;Sua senha&quot;&gt;
+                    &lt;label for&#x3D;&quot;senha&quot;&gt;Senha&lt;/label&gt;
+                &lt;/div&gt;
+    
+                &lt;div class&#x3D;&quot;form-group btnLogin&quot;&gt;
+                    &lt;input [(ngModel)]&#x3D;&#x27;user.senha&#x27; class&#x3D;&quot;form-control&quot; type&#x3D;&quot;password&quot; name&#x3D;&quot;confirmSenha&quot;
+                        id&#x3D;&quot;confirmSenha&quot; placeholder&#x3D;&quot;Confirme sua senha&quot;&gt;
+                    &lt;label for&#x3D;&quot;confirmSenha&quot;&gt;Confirmar Senha&lt;/label&gt;
+                &lt;/div&gt;
+    
+                &lt;div class&#x3D;&quot;form-group btnLogin&quot;&gt;
+                    &lt;label for&#x3D;&quot;tipo&quot; class&#x3D;&quot;mt-1&quot;&gt;Tipo de Usuário:&lt;/label&gt;
+                    &lt;select class&#x3D;&quot;form-control tUser&quot; name&#x3D;&quot;tipo&quot; id&#x3D;&quot;tipo&quot; (change)&#x3D;&#x27;tipoUser($event)&#x27;&gt;
+                        &lt;option&gt;Selecione um tipo de usuário:&lt;/option&gt;
+                        &lt;option class&#x3D;&quot;opt&quot; value&#x3D;&quot;normal&quot;&gt;Normal&lt;/option&gt;
+                        &lt;option class&#x3D;&quot;opt&quot; value&#x3D;&quot;adm&quot;&gt;Administrador&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/div&gt;
+    
+                &lt;div class&#x3D;&quot;d-flex justify-content-center&quot;&gt;
+                    &lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btnCancel mr-4&quot; routerLink&#x3D;&#x27;/inicio&#x27;&gt;Cancelar&lt;/button&gt;
+                    &lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btnAtt&quot; (click)&#x3D;&#x27;atualizar()&#x27;&gt;Atualizar&lt;/button&gt;
+                &lt;/div&gt;
+    
+            &lt;/div&gt;
+        &lt;/div&gt;
+    
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./user-edit.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.colorBG{
+    background-image: linear-gradient(#fff, rgb(224, 220, 165));
+    height: 100vh;
+}
+
+input{
+    width: 350px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(250, 2, 237);
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif; /*sempre por mais de uma*/
+    font-size: 20px;
+    transition: .20s ease-in-out;
+}
+
+.btnLogin{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+label{
+    position: absolute;
+    top : -15%; 
+    left: 2%;
+    font-family : Arial , Helvetica , sans-serif; 
+    color: #000;
+    transform: translateY(10px);
+    transition: .20s ease-in-out; 
+    margin-top: -5px; /*Lembrar de espaçar na validação*/
+}
+
+input:focus + label{
+    color: transparent;
+    background-color: transparent;
+}
+
+.slct{
+    color:rgb(0, 0, 0);
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(010, 182, 218);
+}
+
+input:focus{
+    border-bottom: 2px solid rgb(010, 182, 218);
+    box-shadow: 0 2px 0 0 rgb(010, 182, 218);
+}
+
+input:focus + label{
+    transform: translateY(-11px) scale(.9);
+    color: rgb(0, 0, 0);
+}
+
+input:not(:placeholder-shown) + label{
+    transform: translateY(-11px) scale(.9);
+    color: rgb(0, 0, 0);
+}
+
+input:not(:placeholder-shown){
+    border-bottom: 2px solid rgb(010, 182, 218);
+    box-shadow: 0 2px 0 0 rgb(010, 182, 218);
+}
+
+input::placeholder{
+    color: transparent;
+}
+
+.tUser{
+    width: 250px;
+    color: #000;
+    background-color: transparent;
+    border:none;
+    outline: none;
+    margin-top: 0px; /*não mexer! alinhado com a label*/
+    margin-left: 115px; /*não mexer! alinhado com a label*/
+    cursor: pointer;
+}
+
+.opt{
+    background-color: rgba(82, 114, 202, 0.589);
+    color: #000;
+    cursor: pointer;
+}
+
+button{
+    padding: 12px 18px;
+    width: 120px;
+    margin-top: 55px; 
+    margin-right: 25px;
+    font-family: Arial, Helvetica, sans-serif; /*sempre por mais de uma*/
+    border: none;
+    border-radius: 11px;
+    align-items: center;
+    background-color: #56d9dd96;
+    color: rgb(0, 0, 0); /*cor da palavra entrar*/
+    box-shadow: 3px 2px 2px #5b98a39c, 3px 2px 2px #01afff98;
+}
+    
+button:hover{
+    background-color: #00bb10be;
+    box-shadow: 5px 4px 2px #89b8855d, 5px 4px 2px #01ff622d;
+    transition: .35s;
+    border: none;
+    outline: none;
+}
+    
+.btnCancel:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 3px 2px 2px #f80240ab, 5px 5px 5px #ffffffe1;
+    background-color: #C40022;
+    transition: .55s;
+    color: #fff;
+}
+    
+    
+.btnAtt:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 3px 2px 2px rgb(242, 005, 197), 5px 5px 5px #cdcfd498;
+    color: #000;
+    background-color: rgb(010, 182, 218); 
+    color: #fff;
+
+}
+    
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="colorBG">    <div class="container mb-5 mt-5">        <div class="row">            <div class="col-md-12">                <h1 class="text-center text-sencondary">Atualizar meu Login</h1>            </div>        </div>            <div class="row-wrap d-flex justify-content-center">            <div class="col-md-4">                    <div class="form-group btnLogin">                    <input [(ngModel)]=\'user.nome\' class="form-control" type="text" name="nome" id="nome"                        placeholder="Seu nome">                    <label for="nome">Nome</label>                </div>                    <div class="form-group btnLogin">                    <input [(ngModel)]=\'user.usuario\' class="form-control" type="text" name="usuario" id="usuario"                        placeholder="Seu usuário">                    <label for="usuario">Usuário</label>                </div>                    <div class="form-group btnLogin">                    <input [(ngModel)]=\'user.foto\' class="form-control" type="text" name="foto" id="foto"                        placeholder="Link da sua foto">                    <label for="foto">Link da Foto</label>                </div>                    <div class="form-group btnLogin">                    <input (input)=\'confirmSenha($event)\' class="form-control" type="password" name="senha" id="senha"                        placeholder="Sua senha">                    <label for="senha">Senha</label>                </div>                    <div class="form-group btnLogin">                    <input [(ngModel)]=\'user.senha\' class="form-control" type="password" name="confirmSenha"                        id="confirmSenha" placeholder="Confirme sua senha">                    <label for="confirmSenha">Confirmar Senha</label>                </div>                    <div class="form-group btnLogin">                    <label for="tipo" class="mt-1">Tipo de Usuário:</label>                    <select class="form-control tUser" name="tipo" id="tipo" (change)=\'tipoUser($event)\'>                        <option>Selecione um tipo de usuário:</option>                        <option class="opt" value="normal">Normal</option>                        <option class="opt" value="adm">Administrador</option>                    </select>                </div>                    <div class="d-flex justify-content-center">                    <button type="submit" class="btn btnCancel mr-4" routerLink=\'/inicio\'>Cancelar</button>                    <button type="submit" class="btn btnAtt" (click)=\'atualizar()\'>Atualizar</button>                </div>                </div>        </div>        </div></div></div>'
+    var COMPONENTS = [{'name': 'AlertasComponent', 'selector': 'app-alertas'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CadastrarComponent', 'selector': 'app-cadastrar'},{'name': 'CadastrarEventoComponent', 'selector': 'app-cadastrar-evento'},{'name': 'EntrarComponent', 'selector': 'app-entrar'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'InicioComponent', 'selector': 'app-inicio'},{'name': 'MenuComponent', 'selector': 'app-menu'},{'name': 'PostagemDeleteComponent', 'selector': 'app-postagem-delete'},{'name': 'PostagemEditComponent', 'selector': 'app-postagem-edit'},{'name': 'RodapeComponent', 'selector': 'app-rodape'},{'name': 'TecnologiaComponent', 'selector': 'app-tecnologia'},{'name': 'TemaComponent', 'selector': 'app-tema'},{'name': 'TemaDeleteComponent', 'selector': 'app-tema-delete'},{'name': 'TemaEditComponent', 'selector': 'app-tema-edit'},{'name': 'UserEditComponent', 'selector': 'app-user-edit'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'UserEditComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'UserEditComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

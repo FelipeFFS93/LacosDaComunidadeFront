@@ -95,14 +95,15 @@
                             <h5 class="card-title m-0">{{item.titulo}}</h5>
                             <p class="font-weight-bold"> Tema: {{item.tema.descricao}}</p>
                             <p class="card-text mt-3">{{item.texto}}</p>
-                            <p class="card-text"><small class="text-muted">
+                            <p class="card-text color1">
+                                <small class="color1">
                                     {{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date: 'HH:mm'}}
                                 </small>
                             </p>
 
 
-                            <a [routerLink]="['/postagem-edit', item.id]" class="text-info mr-3" href="">Editar</a>
-                            <a [routerLink]="['/postagem-delete', item.id]" class="text-danger" href="">Apagar</a>
+                            <a [routerLink]="['/postagem-edit', item.id]" class="text-white mr-3 font-weight-bold" href="">Editar</a>
+                            <a [routerLink]="['/postagem-delete', item.id]" class="text-danger font-weight-bold" href="">Apagar</a>
 
                         </div>
                     </div>
@@ -127,8 +128,8 @@
                         <div class="card-body cardBG">
                             <h5 class="card-title m-0">{{item.titulo}}</h5>
                             <p class="card-text mt-3">{{item.texto}}</p>
-                            <p class="card-text">
-                                <small class="text-muted">
+                            <p class="card-text color1 ">
+                                <small class="color1">
                                     {{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date: 'HH:mm'}}
                                 </small>
                             </p>

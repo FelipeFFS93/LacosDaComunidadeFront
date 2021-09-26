@@ -1,5 +1,5 @@
 #img-bg{
-    background-image: url("../../assets/img/maoslaços.png");
+    background-image: url("../../assets/img/pessoas.jpeg");
 
     min-height: 695px;
 
@@ -149,14 +149,14 @@ outline: none;
 .fonte1{
 
     font-family:Sans Serif;
-    font-size: 25px;
+    font-size: 20px;
     
 }
 
 .fonte2{
 
     font-family:Sans Serif;
-    font-size: 22px;
+    font-size: 18px;
 }  
 
 .btnReturn{
@@ -166,7 +166,7 @@ outline: none;
 
 .fonte3{
     font-family:Sans Serif;
-    font-size: 22px;
+    font-size: 19px;
 
 }
 

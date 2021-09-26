@@ -1,3 +1,8 @@
+.colorBG{
+    background-image:linear-gradient(#fff, #0AB6DA);
+    height: 100vh;
+}
+
 .bg-img{
 
     background-image:url("../../assets/img/mao.png") ;
@@ -29,7 +34,7 @@
 }
 
 .mBody{
-    background-image:linear-gradient(#0AB6DA, #fff );
+    background-image:linear-gradient(#0AB6DA, #fff);
 }
 
 .nvPost{
@@ -41,7 +46,26 @@
 }
 
 .cardBG{
-    background-image: linear-gradient(#0AB6DA, #fff);
+    background-image: linear-gradient( #fff,#df32c2);
+}
+
+.whatsapp-link {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 39px;
+    right: 39px;
+    background-color: #25d366 ;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.fa-whatsapp {
+    margin-top: 16px;
 }
 
 .botao1{
@@ -55,54 +79,70 @@
     background-color: #56d9dd96;
     color: rgb(0, 0, 0); /*cor da palavra entrar*/
     box-shadow: 3px 2px 2px #5b98a39c, 3px 2px 2px #01afff98;
-    }
+}
     
-    .botao2:hover{
+.botao2:hover{
     background-color: #00bb10be;
     box-shadow: 5px 4px 2px #89b8855d, 5px 4px 2px #01ff622d;
     transition: .35s;
     border: none;
     outline: none;
-    }
+}
     
-    .btnCancel:hover{
-        font-family: Arial, Helvetica, sans-serif;
-        box-shadow: 3px 2px 2px #f80240ab, 5px 5px 5px #ffffffe1;
-        background-color: #C40022;;
-        transition: .55s;
-        color: #fff;
-    }
+.btnCancel:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 3px 2px 2px #f80240ab, 5px 5px 5px #ffffffe1;
+    background-color: #C40022;;
+    transition: .55s;
+    color: #fff;
+}
     
     
-    .btnCad:hover{
-        font-family: Arial, Helvetica, sans-serif;
-        box-shadow: 3px 2px 2px rgb(010, 182, 218), 5px 5px 5px #cdcfd498;
-        color: #000;
-        background-color: rgb(242, 005, 197);
-        transition: .55s;
-        color: #fff;
-    }
+.btnCad:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 3px 2px 2px rgb(010, 182, 218), 5px 5px 5px #cdcfd498;
+    color: #000;
+    background-color: rgb(242, 005, 197);
+    transition: .55s;
+    color: #fff;
+}
 
-    .subir{
+.subir{
 
-        margin-top: -80px;
-    }
+    margin-top: -80px;
+}
 
-    .botao3{
-        padding: 12px 18px;
-        width: 180px;
-        margin-right: 25px;
-        font-family: Arial, Helvetica, sans-serif; /*sempre por mais de uma*/
-        border: none;
-        border-radius: 11px;
-        align-items: center;
-        background-color: #56d9dd96;
-        color: rgb(0, 0, 0); /*cor da palavra entrar*/
-        box-shadow: 3px 2px 2px #5b98a39c, 3px 2px 2px #01afff98;
-        }
+.botao3{
+    padding: 12px 18px;
+    width: 180px;
+    margin-right: 25px;
+    font-family: Arial, Helvetica, sans-serif; /*sempre por mais de uma*/
+    border: none;
+    border-radius: 11px;
+    align-items: center;
+    background-color: #56d9dd96;
+    color: rgb(0, 0, 0); /*cor da palavra entrar*/
+    box-shadow: 3px 2px 2px #5b98a39c, 3px 2px 2px #01afff98;
+}
 
 
-        .com{
+.com{
+    border-color: #56d9dd96;
+}
 
-            border-color: rgb(242, 005, 197);
-            }
+.color1{
+
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.mt-negativo{
+    margin-bottom: 95px;
+    
+}
+
+
+.lado{
+    left: 5%;
+}

@@ -31,8 +31,11 @@
             <div class="d-flex justify-content-center ml-5 mr-3">
                 <button type="submit" class="btn" routerLink="/entrar">Login</button>
             </div>
-            <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center mr-3">
                 <button type="submit" class="btn" routerLink="/cadastrar">Cadastrar</button>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn" routerLink="/tecnologia">Tecnologias usadas</button>
             </div>
 
             
@@ -59,9 +62,9 @@
 <div class="jumbotron jumbotron-fluid jumboColor space" id="quemSomos">
     <div class="container ">
         <h1 class="display-5 font-weight-bold ">Quem Somos</h1>
-        <p class="lead">Um Projeto que realiza o desejo de juntar o maior número projetos a pessoas,
-            buscando informar e compartilhar eventos.
-            O nosso público alvo é comunidades carentes para que os moradores e ONGs possam
+        <p class="lead ">Um Projeto que realiza o desejo de juntar o maior número projetos a pessoas,
+            buscando informar e compartilhar eventos.<br> 
+                O nosso público alvo é comunidades carentes para que os moradores e ONGs possam
             compartilhar seus eventos permitindo o acesso para:
             <br>
             ✔ Doações <br>
@@ -76,14 +79,11 @@
 <!--TEXTO COM VIDEO-->
 <div class="row mb-5 m-0 bcdTxt">
     <div class="col-md-6 mt-1">
-        <h3 class=" font-weight-bold">Campanha do agasalho 2021: Nós apoiamos essa causa </h3>
+        <h3 class="display-5 font-weight-bold">Campanha do agasalho 2021: Nós apoiamos essa causa </h3>
 
-        <p class="lead mt-5 ">A Campanha do Agasalho 2021 é uma parceria da EPTV com as prefeituras que fazem parte da
-            área de cobertura da
-            emissora nas regiões de Campinas, São Carlos, Ribeirão Preto e Sul de Minas Gerais. O objetivo é unir forças
-            para aumentar a arrecadação de roupas e cobertores para a população que mais precisa.
-
-            A campanha vai de 10 de maio até 31 de julho com pontos fixos de arrecadação nas cidades participantes.</p>
+        <p class="lead mt-5 justify-content-center ">    A Campanha do Agasalho 2021 é uma parceria da EPTV com as prefeituras que fazem parte da
+            área de cobertura da emissora nas regiões de Campinas, São Carlos, Ribeirão Preto e Sul de Minas Gerais.   <br> O objetivo é unir forças
+            para aumentar a arrecadação de roupas e cobertores para a população que mais precisa. A campanha vai de 10 de maio até 31 de julho com pontos fixos de arrecadação nas cidades participantes.</p>
     </div>
 
     <div class="col-md-6">
@@ -268,50 +268,6 @@
     <!--/CARDS-->
 
 </div>
-
-
-<!-- FORMULARIO -->
-<div class="container">
-
-    <h1 class="text-center font-weight-bold mb-5 mt-5">Entre em Contato</h1>
-
-    <div class="row align-items-center">
-
-        <div class="col-md-10 d-flex">
-
-            <div class="form-group btnLogin mr-5">
-                <input class="form-control slct" type="text" name="nome" id="nome" placeholder="Seu nome">
-                <label for="nome">Nome <i class="fa fa-user" aria-hidden="true"></i></label>
-            </div>
-
-            <div class="form-group btnLogin mr-5">
-                <input class="form-control slct " type="text" name="telefone" id="telefone" placeholder="Seu Telefone">
-                <label for="nome">Telefone <i class="fa fa-phone" aria-hidden="true"></i></label>
-            </div>
-
-            <div class="form-group btnLogin mr-5">
-                <input class="form-control slct" type="text" name="email" id="email" placeholder="Seu E-mail">
-                <label for="nome">E-mail <i class="fa fa-envelope-o" aria-hidden="true"></i></label>
-            </div>
-
-
-            <div class="form-group btnLogin mr-5">
-                <input class="form-control slct" type="text" name="mensagem" id="mensagem"
-                    placeholder="Digite uma mensagem">
-                <label class="d-flex justify-content-center align-items-center" for="textMensagem">Mensagem <i
-                        class="fa fa-envelope" aria-hidden="true"></i></label>
-            </div>
-
-        </div>
-
-        <div class="col-md-2 mt-0">
-            <button class="btnCad" (click)= 'enviar()'>Enviar</button>
-        </div>
-
-    </div>
-</div>
-<!--/FORMULARIO -->
-
 
 <!--rodape-->
 <footer class="page-footer-small  pt-3 " id="ctt">

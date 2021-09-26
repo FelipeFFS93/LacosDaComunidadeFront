@@ -23,8 +23,9 @@ button{
     .btnCancel:hover{
         font-family: Arial, Helvetica, sans-serif;
         box-shadow: 3px 2px 2px #f80240ab, 5px 5px 5px #ffffffe1;
-        background-color: #fc2600d8;
+        background-color: #C40022;
         transition: .55s;
+        color: #fff;
     }
     
     
@@ -34,4 +35,6 @@ button{
         color: #000;
         background-color: rgb(242, 005, 197);
         transition: .55s;
+        color: #fff;
+
     }

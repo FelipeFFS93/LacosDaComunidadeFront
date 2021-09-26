@@ -140,7 +140,7 @@ font-size: 35px;
 .fonte2{
 
 font-family:Sans Serif;
-font-size: 25px;
+font-size: 35px;
 
 }
 
@@ -244,27 +244,7 @@ article:nth-child(7) {
     transition: .45s ease-in-out;
 }
 
-/* .card:hover {
-    box-shadow: 0 .5rem 1rem #1058cc; 
-}
 
-.card:hover .card__name {
-    left: 0;
-}
-
-.card__img:hover{
-    margin-left: 3.5rem;
-}
-
-
-.card:hover .card__precis { 
-    margin-left: 3.5rem;
-    padding: 0 2.5rem;
-} */
-
-/* .colorTeam{
-    background-color: rgb(219, 210, 87);
-} */
 
 .bcdColor{
     background-image:linear-gradient( rgb(219, 210, 87), rgb(255, 255, 255));
@@ -308,81 +288,8 @@ article:nth-child(7) {
 }
 
 
-/* FORMULARIO */
-input{
-    width: 100%;
-    height: 30px;
-    background: transparent;
-    border: none;
-    outline: none;
-    border-bottom: 2px solid #ffffff;
-    color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif; /*sempre por mais de uma*/
-    font-size: 20px;
-    transition: .20s ease-in-out;
-}
+/* PROGRESSO */
 
-.btnLogin{
-    position: relative;
-    margin-bottom: 20px;
-}
-
-label{
-    position: absolute;
-    top : -15%; 
-    left: 4%;
-    font-family : Arial , Helvetica , sans-serif; 
-    color: #000;
-    transform: translateY(10px);
-    transition: .20s ease-in-out; 
-    margin-top: -5px; /*Lembrar de espaçar na validação*/
-}
-
-input:focus + label{
-    color: transparent;
-    background-color: transparent;
-}
-
-.slct{
-    color:#000;
-    background: transparent;
-    border: none;
-    outline: none;
-    border-bottom: 2px solid rgb(010, 182, 218);
-}
-
-input:focus{
-    border-bottom: 2px solid rgb(010, 182, 218);
-    box-shadow: 0 2px 0 0 rgb(010, 182, 218);
-}
-
-input:focus + label{
-    transform: translateY(-11px) scale(.9);
-    color: #000;
-}
-
-input:not(:placeholder-shown) + label{
-    transform: translateY(-11px) scale(.9);
-    color: #000;
-}
-
-input:not(:placeholder-shown){
-    border-bottom: 2px solid rgb(010, 182, 218);
-    box-shadow: 0 2px 0 0 rgb(010, 182, 218);
-}
-
-input::placeholder{
-    color: transparent;
-}
-
-textarea{
-    height: 75px;
-    min-height: 75px;
-    max-height: 75px;
-    width: 370px;
-    border: 2px outset rgb(010, 182, 218);
-    outline: none;
-}
 
 
 /* FOOTER */

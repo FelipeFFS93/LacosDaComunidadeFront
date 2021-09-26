@@ -11,6 +11,7 @@ import { EntrarComponent } from './entrar/entrar.component';
 import { HomeComponent } from './home/home.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { MenuComponent } from './menu/menu.component';
+import { TecnologiaComponent } from './tecnologia/tecnologia.component';
 import { TemaComponent } from './tema/tema.component';
 
 const routes: Routes = [
@@ -39,7 +40,9 @@ const routes: Routes = [
 
   {path: 'user-edit/:id', component: UserEditComponent},
 
-  {path: 'cadastrar-evento', component: CadastrarEventoComponent}
+  {path: 'cadastrar-evento', component: CadastrarEventoComponent},
+
+  {path: 'tecnologia', component: TecnologiaComponent}
   
 
 

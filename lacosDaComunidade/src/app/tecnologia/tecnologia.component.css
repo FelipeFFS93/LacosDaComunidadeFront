@@ -1,0 +1,41 @@
+.colorBG{
+    background-image: linear-gradient(#fff, rgb(224, 220, 165));
+    height: 100vh;
+}
+
+.whatsapp-link {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 39px;
+    right: 39px;
+    background-color: #25d366 ;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.fa-whatsapp {
+    margin-top: 16px;
+}
+
+.btnReturn{
+    color: #000;
+    text-decoration: none;
+}
+
+.html{
+    background-color: #fd7a00
+}
+   
+.js{
+    background-color: #bafd00
+}
+   
+.css{
+    background-color: #9800fd
+}
+   

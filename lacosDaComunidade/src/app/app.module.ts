@@ -21,6 +21,7 @@ import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delet
 import { OrderModule } from 'ngx-order-pipe';
 import { AlertasComponent } from './alertas/alertas.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { TecnologiaComponent } from './tecnologia/tecnologia.component';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     UserEditComponent,
     PostagemDeleteComponent,
     AlertasComponent,
+    TecnologiaComponent,
   ],
   imports: [
     BrowserModule,
